@@ -1,0 +1,58 @@
+/*
+#301934
+#00ff00
+#5A5A5A
+#ADD8E6
+#FFAC1C
+*/
+*{
+    font-family: sans-serif
+}
+html{
+    background-color: #1d1934;
+}
+.theme{
+    font-size:4rem;
+    color: #FFAC1C;
+}
+.table{
+    font-size: 2rem;
+    margin: 1rem;
+}
+td{
+    color:white;
+    padding: 2rem;
+    border: solid black;
+    background-color: #48234f;
+    transition: 1s;
+}
+.ob{
+    color: #7be2ff;
+    border: solid black;
+    background-color: #48234f;
+    font-weight: bold;
+}
+.notes01{
+    color: rgb(169, 169, 169);
+    margin-top:1rem;
+    font-size: 1.2rem;
+}
+.pythonP01:hover{
+    background-color: #662c71;
+    cursor: pointer;
+}
+.des{
+    background-color: #662c71;
+}
+@media only screen and (max-width: 767px){
+    .theme{
+        font-size: 1.7rem;
+    }
+    .table{
+        font-size: 1.2rem;
+        margin:0rem;
+    }
+    td{
+        padding: 1rem;
+    }
+}

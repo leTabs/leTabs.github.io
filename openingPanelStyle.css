@@ -1,0 +1,73 @@
+/*
+#301934
+#00ff00
+#5A5A5A
+#ADD8E6
+#FFAC1C
+*/
+:root{
+    --color:#FFAC1C;
+    --background-color: #301934;
+}
+body{
+    background-color: var(--background-color);
+}
+*{
+    font-family: sans-serif;
+}
+.innerBox{
+    width: 37rem;
+    height: 37rem;
+    background-image: url("wokingLady.png");
+    position: fixed;
+    left: 50%;
+    bottom: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    filter: drop-shadow(10px 12px 12px);
+}
+
+
+button:hover{
+    transform: scale(105%);
+    background-color: rgb(216, 19, 216);
+    color: rgb(217, 216, 216);
+    cursor: pointer;
+}
+.statement{
+    color:  var(--color);
+    font-size: 4rem;
+}
+a{
+    color: white;
+    font-size: 2.5rem;
+    transition: 500ms;
+    text-decoration: none;
+    text-align:center;
+}
+
+a:hover{
+    color: #00bfff;
+    cursor: pointer;
+}
+.textS{
+    padding-top: 1rem;
+    margin-top: 5rem;
+    width: 45%;
+    /* border: solid red 1px; */
+    margin-left: 1rem;
+}
+@media only screen and (max-width: 767px) {
+  .innerBox {
+    display: none;
+  }
+  a{
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+  .statement{
+    font-size: 1.7rem;
+  }
+}
