@@ -90,7 +90,7 @@ html{
         padding-left: 5rem;
         padding-right: 5rem;
     }
-    .post,.mReport, .wReport{
+    .postSection,.mReport, .wReport{
         margin-top: 2.5rem;
         /* margin-left: auto; */
         /* margin-right: auto; */
