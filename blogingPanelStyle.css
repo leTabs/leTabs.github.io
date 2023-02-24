@@ -35,7 +35,7 @@ html{
     text-decoration: underline;
 }
 /*  */
-.post,.mReport, .wReport{
+.post,.mReport, .wReport, .postSection{
     margin-top: 2.5rem;
     margin-left: auto;
     margin-right: auto;
