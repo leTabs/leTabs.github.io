@@ -43,6 +43,10 @@ html{
     background-color: #301934;
     box-shadow: 5px 5px 19px 3px black;
 }
+
+.postSection{
+    border: solid red 1px;
+}
 .mReport, .wReport{
     display: none;
 }
