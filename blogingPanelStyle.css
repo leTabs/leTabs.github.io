@@ -13,9 +13,7 @@ html{
     background-color : #1d1934;
     overflow-x: hidden;
 }
-.postSection{
-    background-color: red;
-}
+
 .navSection{
     padding:0.5rem 0rem ;
     background-color:#552a5d;
@@ -37,7 +35,7 @@ html{
     text-decoration: underline;
 }
 /*  */
-.post,.mReport, .wReport{
+.postSection,.mReport, .wReport{
     margin-top: 2.5rem;
     margin-left: auto;
     margin-right: auto;
