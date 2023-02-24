@@ -45,7 +45,7 @@ html{
 }
 
 .postSection{
-    border: solid red 1px;
+    border: solid red 10px;
 }
 .mReport, .wReport{
     display: none;
