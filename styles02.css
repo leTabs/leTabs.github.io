@@ -130,7 +130,44 @@ width: 100vw;
 .project{
     margin: 1rem auto;
     width: 40vw;
-    height: 25vw;
+    height: 40vh;
     box-shadow: 3px 3px 5px 5px black;
     border-radius: 5px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2;
+}
+.project .imgHolder{
+    width: 30vw;
+    height: 30vh;
+    margin: 2rem auto 0 auto;
+    padding:0;
+    border: solid rgb(171, 171, 171) 1px;
+    object-fit: cover;
+    /* border: solid red 1px; */
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+    overflow: hidden;
+}
+.imgEl{
+    width: 30vw;
+    height: 30vh;
+    transition: 300ms;
+}
+.project:hover .imgHolder .imgEl {
+    /* filter:blur(1px); */
+    opacity: 0.5;
+    transform: scale(1.2);
+}
+.project:hover .imgHolder{
+    background-color: rgb(76, 76, 76);
+}  
+.project h4{
+    text-align: center;
+    margin: 0;
+    padding:0;
+    font-size: 1.2rem;
+    color: var(--front-color);
+    /* border: solid red 1px; */
 }
