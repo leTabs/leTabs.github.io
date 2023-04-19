@@ -201,3 +201,16 @@ width: 100vw;
 .gitButton {left: 50%;}
 .saveButton{left: 70%;}
 .lookButton{left: 30%;}
+
+.portFin01{
+    width: 60%;
+    margin-top: 2rem;
+}
+.portFin02{
+    width:45%;
+    margin-top:1rem
+}
+.portFin03{
+    width: 35%;
+    margin-top: 1rem;
+}
