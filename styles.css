@@ -14,7 +14,7 @@ body{
     margin: 0;
     overflow-x: hidden;
 }
-.intro, .aboutMe, .myServices, .myResume{
+.intro, .aboutMe, .myServices, .myResume, .contact{
     width: 100vw;
     height:100vh;
     border: none;
@@ -109,7 +109,7 @@ body{
     background-color: transparent;
     cursor: pointer;
 }
-.aboutMe, .myResume{
+.aboutMe, .myResume, .contact{
     background: linear-gradient(to top right,  #2c2c2c, #141414, #000000 );
 }
 .aboutMeMain, .temps{
@@ -139,7 +139,7 @@ body{
 .myPic{
     background-color:white;
 }
-.titleAm, .titleMyS, .titleMyExp, .titleMyW{
+.titleAm, .titleMyS, .titleMyExp, .titleMyW, .titleContact{
     margin-top: 0;
     display: block;
     text-align: center;
@@ -155,4 +155,3 @@ hr{
     opacity: 0.2;
     padding:0;
 }
-
