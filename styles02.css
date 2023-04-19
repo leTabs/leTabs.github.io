@@ -145,7 +145,6 @@ width: 100vw;
     padding:0;
     border: solid rgb(171, 171, 171) 1px;
     object-fit: cover;
-    /* border: solid red 1px; */
     border-radius: 5px;
     transition: transform 0.5s ease;
     overflow: hidden;
@@ -153,21 +152,52 @@ width: 100vw;
 .imgEl{
     width: 30vw;
     height: 30vh;
-    transition: 300ms;
+    transition: 600ms;
 }
 .project:hover .imgHolder .imgEl {
     /* filter:blur(1px); */
     opacity: 0.5;
     transform: scale(1.2);
 }
-.project:hover .imgHolder{
+.imgHolder:hover{
     background-color: rgb(76, 76, 76);
-}  
+} 
+.imgHolder:hover img{
+    display: block;
+}
 .project h4{
     text-align: center;
     margin: 0;
     padding:0;
     font-size: 1.2rem;
     color: var(--front-color);
-    /* border: solid red 1px; */
 }
+.project {
+    position: relative;
+  }
+  
+  
+.gitButton, .saveButton, .lookButton{
+    position: absolute;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: none;
+    color: #333;
+    border-radius: 5px;
+    z-index: 1;
+    display: none;
+    font-size: 1rem;
+    font-weight: bold;
+    width:2rem;
+    height: 2rem;
+    transition: 400ms;
+}
+.gitButton:hover, .saveButton:hover, .lookButton:hover{
+    cursor: pointer;
+    filter:invert(80%)
+}
+
+.gitButton {left: 50%;}
+.saveButton{left: 70%;}
+.lookButton{left: 30%;}
