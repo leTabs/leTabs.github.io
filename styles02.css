@@ -1,0 +1,114 @@
+:root{
+    --background-color01: rgb(17, 129, 137);
+    --front-color: rgb(10, 204, 218);
+    --margin01: auto;
+}
+.temps section{
+    width:20vw;
+    height:60vh;
+    justify-content: space-evenly;
+    margin:1rem var(--margin01) 0 var(--margin01);
+    font-size: 1.3rem;
+    color: rgb(210, 209, 209);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align:left;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    transition: 500ms;
+    box-shadow: 3px 3px 5px 5px black;
+}
+.temps section:hover{
+    transform: scale(103%);
+}
+
+.temps section *{
+    margin:0;
+    padding: 0;
+}
+.temps section img{
+    width: 10vw;
+    height: 10vh;
+    filter:invert(60%);
+    border: solid rgb(0, 0, 0) 1px;
+    border-radius: 5px;;
+    padding:0.2rem;
+    transition: 600ms;
+}
+/*
+.temps section img:hover{
+    background-color: var(--front-color);
+    filter:invert(0%);
+    transform: rotate(-3deg);
+}*/
+.webDev, .respWeb, .backEnd, .databaseOp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .temps section  h3{
+    color: var(--front-color);
+    text-align: center;
+    margin-top:0;
+    font-size: 1.5rem;
+  }
+.myResume hr:nth-of-type(1){
+    width: 35%;
+}
+.graph{
+    margin: 3rem auto 0 auto;
+    width: 50%;
+    box-shadow: 3px 3px 5px 5px black;
+    padding: 2rem;
+}
+.graph div *{
+    padding: 0;
+    margin:0.5rem;
+}
+.graph div p{
+    color: white;
+}
+.graph h6{
+    font-size: 1rem;
+    color: var(--front-color)
+}
+.deck{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+    color: rgb(16, 129, 129);
+    margin-bottom: 2rem;
+}
+.graph, .deck span, .graph div{
+    border-radius: 5px;
+}
+.deck span{
+    /* text-decoration: underline; */
+    color: rgb(255, 255, 255);
+    padding:0.5rem;
+    background-color: rgb(16, 129, 129);
+}
+
+.graph div{
+    margin: 0rem auto;
+    padding: 0;
+    width: 50%;
+    border: rgb(255, 255, 255) solid 1px;
+    text-align: center;
+    background-color: rgb(32, 32, 32);
+    transition: 200ms;
+}
+.graph div:hover{
+    transform: scale(105%);
+}
+
+.liner{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem ;
+    padding:0;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    opacity: 0.3;
+}
