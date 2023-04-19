@@ -214,3 +214,11 @@ width: 100vw;
     width: 35%;
     margin-top: 1rem;
 }
+.formWrapper{
+    margin: 3rem auto 0 auto;
+    width: 70vw;
+    height: 60vh;
+    border: none;
+    padding: 0;
+    box-shadow: 3px 3px 5px 5px black;
+}
