@@ -14,7 +14,7 @@ body{
     margin: 0;
     overflow-x: hidden;
 }
-.intro, .aboutMe, .myServices, .myResume, .portfolio{
+.intro, .aboutMe, .myServices, .myResume{
     width: 100vw;
     height:100vh;
     border: none;
