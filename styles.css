@@ -92,7 +92,7 @@ body{
     cursor: pointer;
     box-shadow: 2px 2px 7px 1px white;
 }
-.introWelc button{
+.introWelc button, .introWelc.con{
     color: white;
     font-weight: bold;
     margin-top: 1rem;
