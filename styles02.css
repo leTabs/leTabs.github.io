@@ -216,20 +216,42 @@ width: 100vw;
 }
 .formWrapper{
     margin: auto;
-    width: 70vw;
+    width: 55vw;
     height: 60vh;
     border: none;
     padding: 0;
     box-shadow: 3px 3px 5px 5px black;
 }
+.commentWrapper{
+    padding-top: 1rem;
+    margin: 1rem auto 1.5rem auto;
+    width: 4rem;
+    height: 4rem;
+
+}
+.comment{
+    width: 3.5rem;
+    height: 3.5rem;
+    transition: 700ms;
+    filter: invert(30%);
+
+}
+.comment:hover{
+    filter: invert(80%)
+}
 .conTable{
     margin: 0 auto;
-    padding: 10rem 3rem 2rem 3rem;
-    border: solid rgb(255, 0, 195) 1px;
+    padding: 5rem 0 0 0;
+    border-bottom: solid rgb(158, 158, 158) 1px;
 }
 .td01, .td02{
-    padding: 0.5rem 3rem;
+    padding: 0.5rem 2rem;
     font-size: 1.5rem;
-    border: solid white 1px;
-    color: cyan;
+    /* border: solid white 1px; */
+}
+.td01{
+    color: var(--front-color)
+}
+.sendEmail{
+    margin-left: 2.5rem;
 }
