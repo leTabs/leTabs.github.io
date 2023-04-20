@@ -215,10 +215,21 @@ width: 100vw;
     margin-top: 1rem;
 }
 .formWrapper{
-    margin: 3rem auto 0 auto;
+    margin: auto;
     width: 70vw;
     height: 60vh;
     border: none;
     padding: 0;
     box-shadow: 3px 3px 5px 5px black;
+}
+.conTable{
+    margin: 0 auto;
+    padding: 10rem 3rem 2rem 3rem;
+    border: solid rgb(255, 0, 195) 1px;
+}
+.td01, .td02{
+    padding: 0.5rem 3rem;
+    font-size: 1.5rem;
+    border: solid white 1px;
+    color: cyan;
 }
