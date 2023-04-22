@@ -105,7 +105,7 @@ body{
     background-color: var(--background-color01);
     transition: 300ms;
 }
-.introWelc button:hover{
+.introWelc button:hover, .sendEmail{
     background-color: transparent;
     cursor: pointer;
 }
