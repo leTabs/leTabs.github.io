@@ -175,7 +175,7 @@ hr{
         font-size: 0.9rem;
         width: 7rem;
     }
-    .aboutMeMain, .temps{
+    .aboutMeMain{ /*, .temps*/
         margin:0;
         display: grid;
     }
@@ -184,29 +184,14 @@ hr{
         height:80vw;
         padding: 0.3rem;
         font-size: 1rem;
+        color: red;
     }
     .ownWords{padding:0.5rem}
     .ownWords h3 span{
-        color:var(--front-color)
-    }
-    .myPic{
-        background-color:white;
-    }
+        color:var(--front-color)}
     .titleAm, .titleMyS, .titleMyExp, .titleMyW, .titleContact{
-        margin-top: 0;
-        display: block;
-        text-align: center;
         padding-top:1.5rem;
         /* HERE BABE */
-        margin-bottom: 0;
-        color: white;
-        font-size: 2.5rem;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-    
-    hr{
-        width: 25%;
-        opacity: 0.2;
-        padding:0;
-    }
+        font-size: 2rem;
+}
 }  
