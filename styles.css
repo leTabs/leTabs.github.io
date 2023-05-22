@@ -180,19 +180,10 @@ hr{
         display: grid;
     }
     .ownWords, .myPic {
-        width:70vw;
-        height:70vw;
-        /* justify-content:flex-start;
-         */
-        margin:1rem var(--margin01) 0 var(--margin01);
+        width:75vw;
+        height:75vw;
         padding: 0.3rem;
-        font-size: 0.9rem;
-        color: rgb(210, 209, 209);
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        text-align:left;
-        border-radius: 5px;
-        letter-spacing: 2px;
-        box-shadow: 3px 3px 5px 5px black;
+        font-size: 1rem;
     }
     .ownWords{padding:0.5rem}
     .ownWords h3 span{
@@ -205,7 +196,8 @@ hr{
         margin-top: 0;
         display: block;
         text-align: center;
-        padding-top:7rem;
+        padding-top:1.5rem;
+        /* HERE BABE */
         margin-bottom: 0;
         color: white;
         font-size: 2.5rem;
