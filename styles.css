@@ -180,9 +180,11 @@ hr{
         display: grid;
     }
     .temps{
+        margin: 0.5rem;
+        /* padding: 0.1rem; */
         display: grid;
         grid-template-columns: 1fr 1fr; /* Three equal columns */
-        grid-gap: 0.5rem
+        grid-gap: 0rem
     }
     .ownWords, .myPic {
         width:80vw;
