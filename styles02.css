@@ -273,30 +273,29 @@ width: 100vw;
 @media only screen and (max-width: 767px){
     .temps section{
         width:40vw;
-        height:20vh;
+        height:40vw;
         justify-content: space-evenly;
-        margin:0.5rem var(--margin01) 0 var(--margin01);
+        margin:1.5rem var(--margin01) 0 var(--margin01);
         font-size: 0.8rem;
     }
     .temps section:hover{
         transform: scale(103%);
     }
-    
+
     .temps section *{
         margin:0;
         padding: 0;
     }
     .temps section img{
-        width: 5vw;
-        height: 5vw;
+        width: 8vw;
+        height: 8vw;
         padding:0.2rem;
     }
-    /*
-    .temps section img:hover{
-        background-color: var(--front-color);
-        filter:invert(0%);
-        transform: rotate(-3deg);
-    }*/
+    .temps section  h3{
+        color: blue; /*DELETE THAT LATER*/
+        font-size: 0.8rem;
+        padding: 1rem
+      }
     .webDev, .respWeb, .backEnd, .databaseOp {
         display: flex;
         flex-direction: column;
@@ -304,12 +303,7 @@ width: 100vw;
         justify-content: center;
       }
     
-      .temps section  h3{
-        color: var(--front-color);
-        text-align: center;
-        margin-top:0;
-        font-size: 1.5rem;
-      }
+
     .myResume hr:nth-of-type(1){
         width: 35%;
     }
