@@ -234,6 +234,7 @@ width: 100vw;
     height: 3.5rem;
     transition: 700ms;
     filter: invert(30%);
+    margin-top:2rem
 
 }
 .comment:hover{
@@ -266,4 +267,262 @@ width: 100vw;
 }
 .sendEmail:hover{
     background-color: transparent;
+}
+
+/* Phone sizes */
+@media only screen and (max-width: 767px){
+    .temps section{
+        width:40vw;
+        height:20vh;
+        justify-content: space-evenly;
+        margin:0.5rem var(--margin01) 0 var(--margin01);
+        font-size: 0.8rem;
+    }
+    .temps section:hover{
+        transform: scale(103%);
+    }
+    
+    .temps section *{
+        margin:0;
+        padding: 0;
+    }
+    .temps section img{
+        width: 5vw;
+        height: 5vw;
+        padding:0.2rem;
+    }
+    /*
+    .temps section img:hover{
+        background-color: var(--front-color);
+        filter:invert(0%);
+        transform: rotate(-3deg);
+    }*/
+    .webDev, .respWeb, .backEnd, .databaseOp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .temps section  h3{
+        color: var(--front-color);
+        text-align: center;
+        margin-top:0;
+        font-size: 1.5rem;
+      }
+    .myResume hr:nth-of-type(1){
+        width: 35%;
+    }
+    .graph{
+        margin: 3rem auto 0 auto;
+        width: 50%;
+        box-shadow: 3px 3px 5px 5px black;
+        padding: 2rem;
+    }
+    .graph div *{
+        padding: 0;
+        margin:0.5rem;
+    }
+    .graph div p{
+        color: white;
+    }
+    .graph h6{
+        font-size: 1rem;
+        color: var(--front-color)
+    }
+    .deck{
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 0;
+        color: rgb(16, 129, 129);
+        margin-bottom: 2rem;
+    }
+    .graph, .deck span, .graph div{
+        border-radius: 5px;
+    }
+    .deck span{
+        /* text-decoration: underline; */
+        color: rgb(255, 255, 255);
+        padding:0.5rem;
+        background-color: rgb(16, 129, 129);
+    }
+    
+    .graph div{
+        margin: 0rem auto;
+        padding: 0;
+        width: 50%;
+        border: rgb(255, 255, 255) solid 1px;
+        text-align: center;
+        background-color: rgb(32, 32, 32);
+        transition: 200ms;
+    }
+    .graph div:hover{
+        transform: scale(105%);
+    }
+    
+    .liner{
+        color: white;
+        text-align: center;
+        font-size: 1.5rem ;
+        padding:0;
+        margin: 0;
+        margin-bottom: 0.5rem;
+        opacity: 0.3;
+    }
+    .portfolio{
+    width: 100vw;
+        height:200vh;
+        border: none;
+        background: linear-gradient(to left top, #000000, #141414, #2c2c2c);
+        padding: 0;
+        margin: 0;
+    }
+    .projectLayout{
+        justify-content: center;
+        display: grid;
+        grid-template-columns:  43vw 43vw;
+        grid-template-rows: 2;
+        padding-top: 2.3rem;
+    }
+    .project{
+        margin: 1rem auto;
+        width: 40vw;
+        height: 40vh;
+        box-shadow: 3px 3px 5px 5px black;
+        border-radius: 5px;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+    }
+    .project .imgHolder{
+        width: 30vw;
+        height: 30vh;
+        margin: 2rem auto 0 auto;
+        padding:0;
+        border: solid rgb(171, 171, 171) 1px;
+        object-fit: cover;
+        border-radius: 5px;
+        transition: transform 0.5s ease;
+        overflow: hidden;
+    }
+    .imgEl{
+        width: 30vw;
+        height: 30vh;
+        transition: 600ms;
+    }
+    .project:hover .imgHolder .imgEl {
+        /* filter:blur(1px); */
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+    .imgHolder:hover{
+        background-color: rgb(76, 76, 76);
+    } 
+    .imgHolder:hover img{
+        display: block;
+    }
+    .project h4{
+        text-align: center;
+        margin: 0;
+        padding:0;
+        font-size: 1.2rem;
+        color: var(--front-color);
+    }
+    .project {
+        position: relative;
+      }
+      
+      
+    .gitButton, .saveButton, .lookButton{
+        position: absolute;
+        top: 70%;
+        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        border: none;
+        color: #333;
+        border-radius: 5px;
+        z-index: 1;
+        display: none;
+        font-size: 1rem;
+        font-weight: bold;
+        width:2rem;
+        height: 2rem;
+        transition: 400ms;
+    }
+    .gitButton:hover, .saveButton:hover, .lookButton:hover{
+        cursor: pointer;
+        filter:invert(80%)
+    }
+    
+    .gitButton {left: 50%;}
+    .saveButton{left: 70%;}
+    .lookButton{left: 30%;}
+    
+    .portFin01{
+        width: 60%;
+        margin-top: 2rem;
+    }
+    .portFin02{
+        width:45%;
+        margin-top:1rem
+    }
+    .portFin03{
+        width: 35%;
+        margin-top: 1rem;
+    }
+    .formWrapper{
+        margin: auto;
+        width: 55vw;
+        height: 60vh;
+        border: none;
+        padding: 0;
+        box-shadow: 3px 3px 5px 5px black;
+    }
+    .commentWrapper{
+        padding-top: 1rem;
+        margin: 1rem auto 1.5rem auto;
+        width: 4rem;
+        height: 4rem;
+    
+    }
+    .comment{
+        width: 3.5rem;
+        height: 3.5rem;
+        transition: 700ms;
+        filter: invert(30%);
+        margin-top:2rem
+    
+    }
+    .comment:hover{
+        filter: invert(80%)
+    }
+    .conTable{
+        margin: 0 auto;
+        padding: 5rem 0 0 0;
+        border-bottom: solid rgb(158, 158, 158) 1px;
+    }
+    .td01, .td02{
+        padding: 0.5rem 2rem;
+        font-size: 1.5rem;
+        color: white;
+        /* border: solid white 1px; */
+    }
+    .td01{
+        color: var(--front-color)
+    }
+    .sendEmail{
+        margin-left: 2.5rem;
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: white;
+        background-color: var(--background-color01);
+        outline: none;
+        border: var(--background-color01)solid 1px;
+        border-radius: 5px;
+        transition: 400ms;
+    }
+    .sendEmail:hover{
+        background-color: transparent;
+    }
 }
