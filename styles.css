@@ -157,7 +157,7 @@ hr{
     padding:0;
 }
 
-
+/* Phone sizes */
 @media only screen and (max-width: 767px) {
     .navBar{
         display: none;
@@ -175,23 +175,26 @@ hr{
         font-size: 0.9rem;
         width: 7rem;
     }
-    .aboutMeMain{ /*, .temps*/
+    .aboutMeMain /*, .temps*/{
         margin:0;
         display: grid;
+    }
+    .temps{
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Three equal columns */
+        grid-gap: 0.5rem
     }
     .ownWords, .myPic {
         width:80vw;
         height:80vw;
         padding: 0.3rem;
         font-size: 1rem;
-        color: red;
     }
     .ownWords{padding:0.5rem}
     .ownWords h3 span{
         color:var(--front-color)}
     .titleAm, .titleMyS, .titleMyExp, .titleMyW, .titleContact{
         padding-top:1.5rem;
-        /* HERE BABE */
         font-size: 2rem;
 }
 }  
