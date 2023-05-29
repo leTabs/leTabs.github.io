@@ -353,8 +353,7 @@ width: 100vw;
         margin-top: 1rem;
     }
     .formWrapper{
-        /* margin:0.1rem; */
-        width: 85%;
+        width: 95%;
         height: 70vh;
     }
     .conTable{
@@ -366,7 +365,7 @@ width: 100vw;
     .td01, .td02{
         padding:0;
         margin:0.3rem;
-        font-size: 1rem;
+        font-size: 1.7rem;
     }
     .td02{
         display: block;
