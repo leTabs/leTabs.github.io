@@ -1,4 +1,8 @@
-
+:root{
+    --background-color01: rgb(17, 129, 137);
+    --front-color: rgb(10, 204, 218);
+    --margin01: auto;
+}
 *{
     font-family: Arial, Helvetica, sans-serif; 
 }
