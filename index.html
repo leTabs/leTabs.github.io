@@ -2,185 +2,135 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lysimaxos Code Hub|Portfolio-Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles02.css">
+    <title>Lysimaxos Code Hub|Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <section class="intro" id="home">
-        <nav class="navBar">
-            <span class="myName">Lysimaxos</span>
-            <div>
-                <a href="#home" class="nAnchors">Home</a>
-                <a href="#aboutMe" class="nAnchors">About</a>
-                <a href="#myServices" class="nAnchors">Service</a>
-                <a href="#myResume" class="nAnchors">Resume</a>
-                <a href="#portfolio" class="nAnchors">Portfolio</a>
-                <a href="#contact" class="nAnchors">Contact</a>
-            </div>
-        </nav>
-        <section class="introWelc">
-            <h4>Welcome to my page</h4>
-            <h2>I am a Full Stack Dev</h2>
-            <img src="facebook.svg" class="fbImg">
-            <img src="linkedin.svg" class="inImg">
-            <img src="github.svg"  class="gitImg">
-            <br>
-            <button>Talk to me</button>
-            <button>Download CV</button>
+    <nav>
+        <img src="icons/github.svg" alt="My Photograph" class="myPhoto"/>
+        <p class="name">Lysimaxos</p>
+        <div class="icons">
+            <img src="icons/facebook.svg" alt="My facebook" />
+            <img src="icons/github.svg" alt="My github" />
+            <img src="icons/linkedin.svg" alt="My linkedin" />
+        </div>
+        <hr />
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a  href="#service">Service</a>
+            <a href="#resume">Resume</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <hr />
+    </nav>
+    <main>
+        <section id="home">
+            <h2 class="introduction">I am <br />a Full Stack Dev</h2><hr style="width: 90%;" />
+            <p class="into-p">Welcome to my portfolio website.<br />
+                Triversce to discover my experties, services and work!
+            </p>
+            <button style="margin-left: 7rem;">Talk to Me</button>
+            <button style="margin-left: 0.5rem;">Download CV</button>
         </section>
-    </section>
-
-    <section class="aboutMe" id="aboutMe">
-        <h1 class="titleAm">About me</h1><hr>
-        <div class="aboutMeMain">
-            <img class="myPic"src="github.svg" />
-            <section class="ownWords">
-                <h3>I'm <span>Lysimaxos</span></h3>
-                <p>Full Stack Dev</p>
-                <p>As a full-stack developer,
-                    I am passionate about creating web 
-                    applications that are not only visually 
-                    stunning but also efficient and user-friendly.
-                     Let's work together to create the web 
-                    application of your dreams.</p>
-            </section>
-        </div>
-    </section>
-
-
-    <section class="myServices" id="myServices">
-        <h1 class="titleMyS">My Services</h1><hr>
-        <div class="temps">
-            <section class="webDev">
-                <img src="code-solid.svg" alt="Icon couldn't load" class="servImg"/>
-                <h3>Web Development</h3>
-            </section>
-            <section class="respWeb">
-                <img src="window-restore-regular.svg" alt="Icon couldn't load" class="servImg"/>
-                <h3>Responsive Web Design</h3>
-            </section>
-            <section class="backEnd">
-                <img src="python.svg" alt="Icon couldn't load" class="servImg"/>
-                <h3>Back End Development</h3>
-            </section>
-            <section class="databaseOp">
-                <img src="database-solid.svg" alt="Icon couldn't load" class="servImg"/>
-                <h3>DataBase Optimization</h3>
-            </section>
-        </div>
-    </section>
-    <section class="myResume" id="myResume">
-        <h1 class="titleMyExp">Work Experience</h1><hr>
-        <div class="graph">
-            <h2 class="deck"><span>2022-2023</span> Freelance</h2>
-            <div>
-                <h6>web dev.</h6>
-                <p>Landing & Personal Pages</p>
-                <p>Small web apps</p>
-            </div>
-            <p class="liner"> ______ </p>
-            <div>
-                <h6>Node.js/Python</h6>
-                <p>Command Line Apps</p>
-            </div>
-            <p class="liner"> _______ </p>
-            <div>
-                <h6>Python</h6>
-                <p>Data Visulization</p>
-            </div>
-        </div>
-
-    </section>
-
-    <main class="portfolio" id="portfolio">
-        <h1 class="titleMyW">My Work</h1><hr>
-        <section class="projectLayout">
-
-            <div class="project" id="chat">
-                <div class="imgHolder">
-                    <img class="imgEl" src="github.svg" alt="image couln't load">
-                    <img src="github.svg" class="gitButton">
-                    <img src="circle-down-solid.svg" class="saveButton">
-                    <img src="eye-solid.svg" class="lookButton">
-                </div>
-                <h4>text content here</h4>
-            </div>
-
-            <div class="project" id="allab">
-                <div class="imgHolder">
-                    <img class="imgEl" src="github.svg" alt="image couln't load">
-                    <img src="github.svg" class="gitButton">
-                    <img src="circle-down-solid.svg" class="saveButton">
-                    <img src="eye-solid.svg" class="lookButton">
-                </div>
-                <h4>text content here</h4>
-            </div>
-
-            <div class="project" id="ny1">
-                <div class="imgHolder">
-                    <img class="imgEl" src="github.svg" alt="image couln't load">
-                    <img src="github.svg" class="gitButton">
-                    <img src="circle-down-solid.svg" class="saveButton">
-                    <img src="eye-solid.svg" class="lookButton">
-                </div>
-                <h4>text content here</h4>
-            </div>
-
-            <div class="project" id="ny2">
-                <div class="imgHolder">
-                    <img class="imgEl" src="github.svg" alt="image couln't load">
-                    <img src="github.svg" class="gitButton">
-                    <img src="circle-down-solid.svg" class="saveButton">
-                    <img src="eye-solid.svg" class="lookButton">
-                </div>
-                <h4>text content here</h4>
-            </div>
-
-            <div class="project" id="ny3">
-                <div class="imgHolder">
-                    <img class="imgEl" src="github.svg" alt="image couln't load">
-                    <img src="github.svg" class="gitButton">
-                    <img src="circle-down-solid.svg" class="saveButton">
-                    <img src="eye-solid.svg" class="lookButton">
-                </div>
-                <h4>text content here</h4>
-            </div>
-
-            <div class="project" id="ny4">
-                <div class="imgHolder">
-                    <img class="imgEl" src="github.svg" alt="image couln't load">
-                    <img src="github.svg" class="gitButton">
-                    <img src="circle-down-solid.svg" class="saveButton">
-                    <img src="eye-solid.svg" class="lookButton">
-                </div>
-                <h4>text content here</h4>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-div">
+                <p>I am <span class="about-name">Lysimaxos Lepesiotis</span></p>
+                <p>Full Stack Developer</p>
+                <p>
+                    As a full-stack developer, I am passionate about creating web applications 
+                    that are not only visually stunning but also efficient and user-friendly. 
+                    From front-end to back-end, I have the skills and expertise to that I can help 
+                    you take your digital presence to the next level. Let's work together to create 
+                    the web application of your dreams.
+                </p>
             </div>
         </section>
-        <hr class="portFin01">
-        <hr class="portFin02">
-        <hr class="portFin03">
+        <section id="service">
+            <h2>My Services</h2>
+            <div class="service-div">
+                <div class="service-titles">
+                    <p>Web Development</p>
+                    <p>Back End Development</p>
+                    <p>Database Support</p>
+                    <hr />
+                    <p>Web Design</p>
+                    <p>I do forget sometimes</p>
+                </div>
+                <div class="technologies">
+                    <img src="icons/html5.svg" alt="html5"/>
+                    <img src="icons/css3-alt.svg" alt="CSS3" />
+                    <img src="icons/node-js.svg" alt="Node.js" />
+                    <img src="icons/typescript.svg" alt="typescript" />
+                    <img src="icons/bootstrap.svg" alt="Bootstrap" />
+                    <img src="icons/react.svg" alt="React Basics" />
+                    <img src="icons/python.svg" alt="python" />
+                    <img src="icons/database-solid.svg" alt="Relational Databases SQL" />
+                </div>
+            </div>
+        </section>
+        <section id="resume">
+            <h2>Work Experience</h2>
+            <div class="resume-div">
+                <p><span class="year">2022-2023</span>Independent</p>
+                <!-- add content later  -->
+            </div>
+        </section>
+        <section id="portfolio">
+            <h2>My Work</h2>
+            <div class="portfolio-div">
+                <div class="project">
+                    <div class="project-container">
+                        <img src="icons/github.svg" class="project-img"/>
+                        <img src="eye-solid.svg" class="utility-icon"/>
+                        <img src="icons/github.svg" class="utility-icon"/>
+                        <img src="circle-down-solid.svg" class="utility-icon"/>
+                    </div>
+                    <p>Text content Here</p>
+                </div>
+                <div class="project">
+                    <div class="project-container">
+                        <img src="icons/github.svg" class="project-img"/>
+                        <img src="eye-solid.svg" class="utility-icon"/>
+                        <img src="icons/github.svg" class="utility-icon"/>
+                        <img src="circle-down-solid.svg" class="utility-icon"/>
+                    </div>
+                    <p>Text content Here</p>
+                </div>
+                <div class="project">
+                    <div class="project-container">
+                        <img src="icons/github.svg" class="project-img"/>
+                        <img src="eye-solid.svg" class="utility-icon"/>
+                        <img src="icons/github.svg" class="utility-icon"/>
+                        <img src="circle-down-solid.svg" class="utility-icon"/>
+                    </div>
+                    <p>Text content Here</p>
+                </div>
+                <div class="project">
+                    <div class="project-container">
+                        <img src="icons/github.svg" class="project-img"/>
+                        <img src="eye-solid.svg" class="utility-icon"/>
+                        <img src="icons/github.svg" class="utility-icon"/>
+                        <img src="circle-down-solid.svg" class="utility-icon"/>
+                    </div>
+                    <p>Text content Here</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-div">
+                <img src="comments-solid.svg"/>
+                <form method="post" action="mailto:llepesiwths023@gmail.com" class="contact-form">
+                    <p class="info-type">Mail</p><p><span class="sep">:</span> llepesiotis@gmail.com <button>Send</button></p>
+                    <p class="info-type">Phone Number</p><p><span class="sep">:</span> 6985965862</p>
+                    <p class="info-type">Location</p><p><span class="sep">:</span> Thessaloniki, Greece</p>
+                </form>
+            </div>
+        </section>
     </main>
-
-    <section class="contact" id="contact">
-        <h1 class="titleContact">Contact Me</h1><hr>
-        <section class="formWrapper">
-            <div class="commentWrapper"><img src="comments-solid.svg" class="comment"></div>
-            <form method="post" action="mailto:llepesiotis@gmail.com">
-                <table class="conTable">
-                    <td class="td01">Mail</td><td class="td02">: llepesio@gmail.com <input type="submit" value="Send" class="sendEmail"></td><tr></tr>
-                    <td class="td01">phone</td><td class="td02">: +30 6985965862 </td><tr></tr>
-                    <td class="td01">location</td><td class="td02">: Greece, Thessaloniki</td>
-                </table>
-                
-            </form>
-
-        </section>
-    </section>
 </body>
-<script rel="text" src="anchors.js"></script>
-<script rel="text" src="cosmetics.js"></script>
-<script rel="text" src="emailSendingBackgroung.js"></script>
 </html>
