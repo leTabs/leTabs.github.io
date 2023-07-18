@@ -18,23 +18,17 @@ nav, main, #home, #about, #service, #resume, #portfolio, #contact{
     height: 100vh;
     border: solid transparent 1px;
 }
-main{
-    scroll-behavior: smooth;
-}
 /* Navigation bar */
 nav{
     text-align: center;
     border-right: solid gray 1px;
     box-shadow: 3px 3px 34px 3px black;
-    /* position: fixed; */
 }
 .myPhoto{
     width: 13rem;
     height: 13rem;
     margin-top: 2rem;
-    /* border: solid red 1px; */
     border-radius: 50%;
-    /* filter:invert(90%); */
 }
 .name{
     font-size: 2rem;
@@ -45,7 +39,6 @@ nav{
 .icons img{
     width: 1.5rem;
     height: 1.5rem;
-    /* filter:invert(85%); */
 }
 nav hr{
     width: 85%;
@@ -57,7 +50,9 @@ nav hr{
     letter-spacing: 2px;
     transition: 300ms;
     text-decoration: none;
+    color: black;
 }
+
 .nav-links a:visited{
     color: black;
 }
@@ -70,14 +65,13 @@ nav hr{
 }
 main{
     overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 .introduction{
-    /* color: white; */
     font-size: 4rem;
     margin: 15rem 0 0 4rem;
 }
 .into-p{
-    /* color: rgb(194, 194, 194); */
     font-size: 1.3rem;
     margin-left: 6rem;
 }
@@ -101,9 +95,12 @@ main button:hover{
     cursor: pointer;
     box-shadow: 3px 3px 3px black;
 }
-/* #home, #about{ */
-    /* border-bottom: solid 1px rgb(255, 40, 194); */
-/* } */
+.talk-to-me{
+    margin-left: 7rem;
+}
+.download-cv{
+    margin-left: 0.5rem;
+}
 /* about section */
 
 #about h2, #service h2, #resume h2, #portfolio h2, #contact h2{
@@ -262,4 +259,14 @@ main button:hover{
 }
 .sep{
     color: rgb(234, 0, 140);
+}
+
+@media (min-width: 360px) and (max-width: 767px){
+    body{
+        display: block;
+        overflow-y: hidden;
+    }
+    nav{
+        display: none;
+    }
 }
