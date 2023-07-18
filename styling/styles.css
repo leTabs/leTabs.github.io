@@ -269,4 +269,26 @@ main button:hover{
     nav{
         display: none;
     }
+    .introduction{
+        font-size: 2.3rem;
+        margin: 15rem 0 0 2rem;
+    }
+    .into-p{
+        font-size: 1.3rem;
+        margin-left: 2rem;
+    }
+    main button{
+        display: block;
+        margin: 1rem auto;
+    }
+    .talk-to-me{
+        width: auto;
+        padding:0.5rem;
+        margin-top: 2rem;
+        margin-left: auto;
+    }
+    .download-cv{
+        margin-left: auto;
+    }
+    /*  */
 }
