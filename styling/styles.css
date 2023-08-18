@@ -271,6 +271,35 @@ main button:hover{
 .sep{
     color: rgb(234, 0, 140);
 }
+/*  */
+.projects{
+    margin: 0
+}
+.first-project{
+    display: none;
+    border: solid red 1px;
+    width: 55%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 63%;
+    background-color: pink;
+    animation: project 1s linear forwards
+}
+.first-project img{
+    width: 5rem;
+    height: 5rem;
+}
+@keyframes project {
+    0%{
+        top: 40%;
+        opacity: 0;
+    }
+    100%{
+        top: 50%;
+        opacity: 1;
+    }
+}
 
 @media (min-width: 360px) and (max-width: 767px){
     body{
