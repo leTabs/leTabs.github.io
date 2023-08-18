@@ -11,3 +11,8 @@ inImage.addEventListener('click', ()=>{
 gitImage.addEventListener('click', ()=>{
     window.location = 'https://github.com/leTabs'
 })
+
+
+document.querySelector('.eyeProject01').addEventListener('click', ()=>{
+    document.querySelector('.first-project').style.display = 'block'
+})
