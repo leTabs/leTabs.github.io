@@ -16,3 +16,22 @@ gitImage.addEventListener('click', ()=>{
 document.querySelector('.eyeProject01').addEventListener('click', ()=>{
     document.querySelector('.first-project').style.display = 'block'
 })
+document.querySelector('.close01').addEventListener('click', ()=>{
+    document.querySelector('.first-project').style.display = 'none'
+})
+
+let imgIndex = 1
+document.querySelector('.next-img').addEventListener('click', ()=>{
+    document.querySelector(`.first-project-img0${imgIndex}`).style.display = 'none'
+    if(imgIndex < 8){
+    imgIndex++}
+    document.querySelector(`.first-project-img0${imgIndex}`).style.display = 'inline'
+
+})
+document.querySelector('.previous-img').addEventListener('click', ()=>{
+    document.querySelector(`.first-project-img0${imgIndex}`).style.display = 'none'
+    if(imgIndex > 1){
+    imgIndex--}
+    document.querySelector(`.first-project-img0${imgIndex}`).style.display = 'inline'
+
+})
