@@ -68,7 +68,7 @@ nav hr{
 main{
     overflow-y: scroll;
     scroll-behavior: smooth;
-    animation: apearing 1s linear forwards;
+    /* animation: apearing 1s linear forwards; */
 }
 .introduction{
     font-size: 4rem;
@@ -276,27 +276,88 @@ main button:hover{
     margin: 0
 }
 .first-project{
-    display: none;
-    border: solid red 1px;
-    width: 55%;
+    /* display: none; */
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
-    left: 63%;
-    background-color: pink;
-    animation: project 1s linear forwards
+    left: 50%;
+    background: white;
+    overflow: scroll;
+    /* animation: project 0.3s linear forwards */
+    text-align: center;
+    padding-bottom: 1rem;
 }
-.first-project img{
-    width: 5rem;
-    height: 5rem;
+.project-title{
+    font-size: 3rem;
+    margin: 5rem auto 1rem auto;
 }
-@keyframes project {
+.first-project-img01,
+.first-project-img02,
+.first-project-img03,
+.first-project-img04,
+.first-project-img05,
+.first-project-img06,
+.first-project-img07,
+.first-project-img08{
+    width: 65vw;
+    margin: auto 1rem;
+    border: 1px black solid;
+    display: none;
+    animation: apearing 100ms linear forwards
+}
+@keyframes apearing {
     0%{
-        top: 40%;
         opacity: 0;
     }
     100%{
-        top: 50%;
+        opacity: 1;
+    }
+}
+.first-project-img01{
+    display: inline;
+}
+.previous-img, .next-img{
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 12rem;
+    transition: 300ms;
+}
+.previous-img:hover, .next-img:hover{
+    cursor: pointer;
+    filter: invert(30%);
+    transform: scale(115%);
+}
+.project-keywords{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    width:fit-content;
+    /* padding: 0 4rem; */
+    margin: 1.5rem auto 0 auto;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    box-shadow: 3px 5px 10px black;
+}
+.project-keywords div{
+    padding: 0 2rem;
+    text-align: left;
+}
+.project-description{
+    width: 50%;
+    padding: 1rem 0.5rem;
+    margin: 1.5rem auto 2rem auto;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    box-shadow: 3px 5px 10px black;
+}
+@keyframes project {
+    0%{
+        /* top: 40%; */
+        opacity: 0;
+    }
+    100%{
+        /* top: 50%; */
         opacity: 1;
     }
 }
