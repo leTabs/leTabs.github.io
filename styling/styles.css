@@ -275,8 +275,8 @@ main button:hover{
 .projects{
     margin: 0
 }
-.first-project{
-    /* display: none; */
+.first-project, .second-project{
+    display: none;
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -285,7 +285,7 @@ main button:hover{
     left: 50%;
     background: white;
     overflow: scroll;
-    /* animation: project 0.3s linear forwards */
+    animation: project 0.3s linear forwards;
     text-align: center;
     padding-bottom: 1rem;
 }
@@ -300,12 +300,28 @@ main button:hover{
 .first-project-img05,
 .first-project-img06,
 .first-project-img07,
-.first-project-img08{
+.first-project-img08,
+.first-project-img09,
+.second-project-img01,
+.second-project-img02,
+.second-project-img03,
+.second-project-img04,
+.second-project-img05,
+.second-project-img06,
+.second-project-img07,
+.second-project-img08,
+.second-project-img09,
+.second-project-img010,
+.second-project-img011,
+.second-project-img012,
+.second-project-img013
+{
     width: 65vw;
     margin: auto 1rem;
     border: 1px black solid;
     display: none;
-    animation: apearing 100ms linear forwards
+    animation: apearing 100ms linear forwards;
+    border-radius: 15px;
 }
 @keyframes apearing {
     0%{
@@ -315,16 +331,16 @@ main button:hover{
         opacity: 1;
     }
 }
-.first-project-img01{
+.first-project-img01, .second-project-img01{
     display: inline;
 }
-.previous-img, .next-img{
+.previous-img, .next-img, .previous-img02, .next-img02{
     width: 3rem;
     height: 3rem;
     margin-bottom: 12rem;
     transition: 300ms;
 }
-.previous-img:hover, .next-img:hover{
+.previous-img:hover, .next-img:hover, .previous-img02:hover, .next-img02:hover{
     cursor: pointer;
     filter: invert(30%);
     transform: scale(115%);
