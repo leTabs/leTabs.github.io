@@ -1,4 +1,3 @@
-/* border: solid red 1px; */
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -12,13 +11,14 @@ body{
     display: grid;
     grid-template-columns: 1fr 3fr;
     overflow-y: hidden;
-    /* background:linear-gradient(50deg, rgb(255, 255, 255), rgb(255, 255, 255), rgba(183, 183, 183, 0.663) ); */
-}
+    }
 nav, main, #home, #about, #service, #resume, #portfolio, #contact{
     height: 100vh;
     border: solid transparent 1px;
 }
+
 /* Navigation bar */
+
 nav{
     text-align: center;
     border-right: solid gray 1px;
@@ -65,24 +65,21 @@ nav hr{
     cursor: pointer;
     color: rgb(234, 0, 140);
 }
+
+/* main */
 main{
     overflow-y: scroll;
     scroll-behavior: smooth;
-    /* animation: apearing 1s linear forwards; */
+    animation: apearing 1s linear forwards;
 }
+
+/* openeing panel */
 .introduction{
     font-size: 4rem;
     margin: 15rem 0 0 4rem;
     animation: movingDown 0.6s linear forwards;
 }
-@keyframes movingDown {
-    0%{
-        margin-top: 12rem;
-    }
-    100%{
-        margin-top: 15rem;
-    }
-}
+
 .into-p{
     font-size: 1.3rem;
     margin-left: 6rem;
@@ -129,7 +126,7 @@ main button:hover{
     border-radius: 15px;
     box-shadow: 3px 5px 10px black;
 }
-/*  */
+/* services */
 .service-div{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -146,7 +143,6 @@ main button:hover{
     background-color: gray;
 }
 .technologies{
-    /* border: solid red 1px; */
     padding:2.5rem 0.5rem 0.5rem 1.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -156,7 +152,7 @@ main button:hover{
     height: 3.5rem;
     border-radius: 15px;
 }
-/*  */
+/* about */
 .about-name{
     color: rgb(234, 0, 140);
     font-weight: bolder;
@@ -164,30 +160,24 @@ main button:hover{
 .year{
     background-color: rgb(0, 123, 255);
 }
-/* resume styling end */
 
-/* portfolio section styling*/
+/* portfolio */
 
 .portfolio-div{
     display: grid;
     grid-template-columns: 1fr 1fr;
     border: solid gray 1px ;
     margin:0 3rem;
-    /* padding: 2rem; */
     font-size: 1.5rem;
     border-radius: 15px;
     box-shadow: 3px 5px 10px black;
     height: 27rem;
 }
 .project{
-    /* width: 5rem; */
-    /* height: 5rem; */
-    /* border: solid rgb(0, 68, 255) 1px; */
     margin:0.5rem;
     text-align: center;
 }
 .project-container{
-    /* width: 10rem; */
     height:15rem;
     border: solid gray 1px;
     margin: 0.5rem auto;
@@ -198,13 +188,10 @@ main button:hover{
     border-radius: 15px;
 }
 .project-img{
-    /* border: solid rgb(0, 255, 242) 1px; */
     width: 100%;
     margin: auto;
     height: 100%;
     transition: 300ms;
-    /* remove the filter */
-    /* filter: opacity(0.1) */
 }
 .project-container:hover .project-img{
     transform: scale(120%);
@@ -216,7 +203,6 @@ main button:hover{
     position: relative;
     top: -45%;
     margin:0 1rem;
-    /* border: solid rgb(0, 255, 38) 1px */
     display: none;
 }
 .project-container:hover .utility-icon{
@@ -232,46 +218,7 @@ main button:hover{
     padding: 0;
     color: rgb(234, 0, 140);
 }
-/* contact */
-.contact-div{
-    text-align: center;
-}
-.contact-div img{
-    margin: 0 auto;
-    width: 4rem;
-    height: 4rem;
-    text-align: center;
-}
-.contact-form{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 3;
-    text-align: left;
-    margin-top: 4rem;
-    /* border: solid rgb(0, 30, 255) 1px; */
-    padding:1.5rem
-}
-.contact-form p{
-    /* border: solid red 1px; */
-    border-bottom: solid gray 1px;
-    margin:0;
-    padding:0.7rem 0 0.4rem 0;
-}
-.info-type{
-    /* width: 50%    */
-    color: rgb(234, 0, 140);
-    margin-left: 1rem;
-    font-weight: bold;
-}
-.contact-form button{
-    margin:0;
-    margin-left: 3.5rem;
-    padding: 0.3;
-}
-.sep{
-    color: rgb(234, 0, 140);
-}
-/*  */
+
 .projects{
     margin: 0
 }
@@ -295,9 +242,6 @@ main button:hover{
     border-radius: 5px;
     
 }
-/* .first-project{
-    display: block;
-} */
 .project-title{
     font-size: 3rem;
     margin: 5rem auto 1rem auto;
@@ -332,14 +276,6 @@ main button:hover{
     animation: apearing 100ms linear forwards;
     border-radius: 15px;
 }
-@keyframes apearing {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
 .first-project-img01, .second-project-img01{
     display: inline;
 }
@@ -358,7 +294,6 @@ main button:hover{
     display: flex;
     grid-template-columns: 1fr 1fr;
     width:fit-content;
-    /* padding: 0 4rem; */
     margin: 1.5rem auto 0 auto;
     font-size: 1.2rem;
     border-radius: 15px;
@@ -376,16 +311,7 @@ main button:hover{
     border-radius: 15px;
     box-shadow: 3px 5px 10px black;
 }
-@keyframes project {
-    0%{
-        /* top: 40%; */
-        opacity: 0;
-    }
-    100%{
-        /* top: 50%; */
-        opacity: 1;
-    }
-}
+
 .projects div button{
     width: 5rem;
     font-size: 1.2rem;
@@ -408,6 +334,46 @@ main button:hover{
     background-color: transparent;
     color: rgb(21, 0, 32);
 }
+
+
+/* contact */
+.contact-div{
+    text-align: center;
+}
+.contact-div img{
+    margin: 0 auto;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+}
+.contact-form{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 3;
+    text-align: left;
+    margin-top: 4rem;
+    padding:1.5rem
+}
+.contact-form p{
+    border-bottom: solid gray 1px;
+    margin:0;
+    padding:0.7rem 0 0.4rem 0;
+}
+.info-type{
+    color: rgb(234, 0, 140);
+    margin-left: 1rem;
+    font-weight: bold;
+}
+.contact-form button{
+    margin:0;
+    margin-left: 3.5rem;
+    padding: 0.3;
+}
+.sep{
+    color: rgb(234, 0, 140);
+}
+/* media queries */
+
 @media (min-width: 360px) and (max-width: 767px){
     body{
         display: block;
@@ -472,6 +438,23 @@ main button:hover{
         opacity: 0;
     }
     100%{
-        opacity: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes movingDown {
+    0%{
+        margin-top: 12rem;
+    }
+    100%{
+        margin-top: 15rem;
+    }
+}
+@keyframes project {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
