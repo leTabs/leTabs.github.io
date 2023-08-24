@@ -275,10 +275,13 @@ main button:hover{
 .projects{
     margin: 0
 }
+.project h4{
+    margin: 1.5rem 0 1rem 0;
+}
 .first-project, .second-project{
     display: none;
-    width: 100vw;
-    height: 100vh;
+    width: 70vw;
+    height: 70vh;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -288,7 +291,13 @@ main button:hover{
     animation: project 0.3s linear forwards;
     text-align: center;
     padding-bottom: 1rem;
+    border: solid black 2px;
+    border-radius: 5px;
+    
 }
+/* .first-project{
+    display: block;
+} */
 .project-title{
     font-size: 3rem;
     margin: 5rem auto 1rem auto;
@@ -316,7 +325,7 @@ main button:hover{
 .second-project-img012,
 .second-project-img013
 {
-    width: 65vw;
+    width: 50vw;
     margin: auto 1rem;
     border: 1px black solid;
     display: none;
@@ -377,7 +386,28 @@ main button:hover{
         opacity: 1;
     }
 }
-
+.projects div button{
+    width: 5rem;
+    font-size: 1.2rem;
+    margin: 1.5rem 0.5rem 0 0.5rem;
+    border-radius: 30px;
+    padding: 0.3rem 0;
+    border: 2px solid rgb(21, 0, 32);
+    transition: 300ms;
+}
+.projects div button:hover{
+    box-shadow: 3px 3px 3px black;;
+    cursor: pointer;
+    color: rgb(97, 2, 107);
+}
+.close01, .close02{
+    background-color: rgb(21, 0, 32);
+    color: white;
+}
+.close01:hover, .close02:hover{
+    background-color: transparent;
+    color: rgb(21, 0, 32);
+}
 @media (min-width: 360px) and (max-width: 767px){
     body{
         display: block;
