@@ -427,6 +427,8 @@ main button:hover{
         display: flex;
         justify-content: space-between;
         width: 100vw;
+        position: fix;
+        top: 0;
         /* box-shadow: 3px 3px 15px 3px black; */
     }
     .name02{
@@ -531,20 +533,13 @@ main button:hover{
         height: 100vh;
         padding-bottom: 1rem;
     }
-    .first-project{
-        display: block;
-    }
     .project-title{
-        font-size: 2rem;
-        margin: 6.5rem auto 1rem auto;
+        font-size: 1.7rem;
+        margin: 7.5rem auto 1rem auto;
     }
     .show{
         width: 88vw;
-        margin: auto 1rem;
-        border: 1px black solid;
         display: none;
-        animation: apearing 100ms linear forwards;
-        border-radius: 15px;
     }
     .first-project-img01, 
     .second-project-img01{
@@ -564,60 +559,19 @@ main button:hover{
         height: 2rem;
         margin: 0.7rem 1rem;
     }
-    .previous-img:hover, 
-    .next-img:hover, 
-    .previous-img02:hover, 
-    .next-img02:hover{
-        cursor: pointer;
-        filter: invert(30%);
-        transform: scale(115%);
-    }
     .project-keywords{
-        display: flex;
-        grid-template-columns: 1fr 1fr;
-        width:fit-content;
-        margin: 1.5rem auto 0 auto;
         font-size: 1rem;
-        border-radius: 15px;
         width: 90%;
     }
     .project-keywords h2{
         font-size: 1rem;
     }
-    .project-keywords div{
-        padding: 0 2rem;
-        text-align: left;
-    }
     .project-description{
         width: 90%;
-        padding: 1rem 0.5rem;
-        margin: 1.5rem auto 2rem auto;
         font-size: 1rem;
-        border-radius: 15px;
     }
-    
-    .projects div button{
-        width: 5rem;
-        font-size: 1.2rem;
-        margin: 1.5rem 0.5rem 0 0.5rem;
-        border-radius: 30px;
-        padding: 0.3rem 0;
-        border: 2px solid var(--deep-purple);
-    }
-    .projects div button:hover{
-        box-shadow: 3px 3px 3px black;;
-        cursor: pointer;
-        color: rgb(97, 2, 107);
-    }
-    .close01, .close02{
-        background-color: var(--deep-purple);
-        color: white;
-    }
-    .close01:hover, 
-    .close02:hover{
-        background-color: transparent;
-        color: var(--deep-purple);
-    }
+
+
 }
 
 @keyframes apearing {
