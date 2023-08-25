@@ -45,7 +45,8 @@ main button,
 .next-img, 
 .previous-img02, 
 .next-img02, 
-.projects div button{
+.projects div button, 
+.mobile-img-switch img{
     transition: 300ms;
 }
 
@@ -305,7 +306,8 @@ main button:hover{
 .previous-img:hover, 
 .next-img:hover, 
 .previous-img02:hover, 
-.next-img02:hover{
+.next-img02:hover,
+.mobile-img-switch img:hover{
     cursor: pointer;
     filter: invert(30%);
     transform: scale(115%);
@@ -532,6 +534,9 @@ main button:hover{
         width: 100vw;
         height: 100vh;
         padding-bottom: 1rem;
+    }
+    .first-project{
+        display: block;
     }
     .project-title{
         font-size: 1.7rem;
