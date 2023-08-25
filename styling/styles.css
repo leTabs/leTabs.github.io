@@ -470,7 +470,7 @@ main button:hover{
     #about h2, #service h2, #resume h2, #portfolio h2, #contact h2{
         text-align: center;
         font-size: 2rem;
-        margin-top: 1rem;
+        margin-top: 6rem;
     }
     #home, 
     #about, 
@@ -478,10 +478,10 @@ main button:hover{
     #resume, 
     #portfolio, 
     #contact{
-        height: 85vh;
+        height: 88vh;
         border: solid transparent 1px;
     }
-    .about-div, .service-div, .resume-div, .contact-div{
+    .about-div, .service-div, .resume-div, .contact-div, .portfolio-div{
         height: auto;
         margin:0 0.5rem;
         padding: 1.5rem;
@@ -490,6 +490,7 @@ main button:hover{
     
     .service-div{
         display: block;
+        height: 60%;
     }
     .service-titles{
         border-right: none;
@@ -501,7 +502,83 @@ main button:hover{
         display: none;
     }
     .technologies{
+        display: grid;
+        grid-template-rows: 2;
+    }
+    .technologies img{
+        width: 2rem;
+        height: 2rem;
+        margin: 0.3rem 0;
+    }
+    .portfolio-div{
+        grid-template-columns: 1fr;
+        font-size: 1.2rem;
+        height: auto;
+        padding: 0
+    }
+    .project{
+        margin:0.5rem;
+        text-align: center;
+    }
+    .project-container{
+        height:9rem;
+        border: solid gray 1px;
+        margin: 0.5rem auto;
+        width: 90%;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+    .project-img{
+        width: 100%;
+        margin: auto;
+        height: 100%;
+    }
+    .project-container:hover .project-img{
+        transform: scale(120%);
+        filter:blur(6px);
+    }
+    .utility-icon{
+        width: 2.2rem;
+        height: 2.2rem;
+        position: relative;
+        top: -45%;
+        margin:0 1rem;
         display: none;
+    }
+    .project-container:hover .utility-icon{
+        display: inline;
+    }
+    .utility-icon:hover{
+        cursor: pointer;
+        filter: invert(90%);
+    }
+    .project p{
+        color: var(--higher-pink);
+    }
+    .project h4{
+        margin: 1.5rem 0 1rem 0;
+    }
+    .first-project, .second-project{
+        display: none;
+        width: 70vw;
+        height: 70vh;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        background: white;
+        overflow: scroll;
+        animation: project 0.3s linear forwards;
+        text-align: center;
+        padding-bottom: 1rem;
+        border: solid black 2px;
+        border-radius: 5px;
+        
+    }
+    .project-title{
+        font-size: 3rem;
+        margin: 5rem auto 1rem auto;
     }
 }
 
