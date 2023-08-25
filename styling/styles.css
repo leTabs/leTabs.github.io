@@ -216,10 +216,10 @@ main button:hover{
     margin:0 3rem;
     font-size: 1.5rem;
     border-radius: 15px;
-    height: 27rem;
+    height: auto;
 }
 .project{
-    margin:0.5rem;
+    margin:0.5rem 1rem 2rem  1rem;
     text-align: center;
 }
 .project-container{
@@ -323,7 +323,7 @@ main button:hover{
     text-align: left;
 }
 .project-description{
-    width: 50%;
+    width: 90%;
     padding: 1rem 0.5rem;
     margin: 1.5rem auto 2rem auto;
     font-size: 1.2rem;
@@ -388,6 +388,9 @@ main button:hover{
     color: var(--higher-pink);
 }
 
+.mobile-img-switch{
+    display: none;
+}
 /* media queries */
 @media (min-width: 360px) and (max-width: 767px){
     body{
@@ -518,67 +521,102 @@ main button:hover{
     }
     .project{
         margin:0.5rem;
-        text-align: center;
     }
     .project-container{
         height:9rem;
-        border: solid gray 1px;
-        margin: 0.5rem auto;
-        width: 90%;
-        object-fit: cover;
-        overflow: hidden;
-        border-radius: 15px;
-    }
-    .project-img{
-        width: 100%;
-        margin: auto;
-        height: 100%;
-    }
-    .project-container:hover .project-img{
-        transform: scale(120%);
-        filter:blur(6px);
-    }
-    .utility-icon{
-        width: 2.2rem;
-        height: 2.2rem;
-        position: relative;
-        top: -45%;
-        margin:0 1rem;
-        display: none;
-    }
-    .project-container:hover .utility-icon{
-        display: inline;
-    }
-    .utility-icon:hover{
-        cursor: pointer;
-        filter: invert(90%);
-    }
-    .project p{
-        color: var(--higher-pink);
-    }
-    .project h4{
-        margin: 1.5rem 0 1rem 0;
     }
     .first-project, .second-project{
         display: none;
-        width: 70vw;
-        height: 70vh;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
-        background: white;
-        overflow: scroll;
-        animation: project 0.3s linear forwards;
-        text-align: center;
+        width: 100vw;
+        height: 100vh;
         padding-bottom: 1rem;
-        border: solid black 2px;
-        border-radius: 5px;
-        
+    }
+    .first-project{
+        display: block;
     }
     .project-title{
-        font-size: 3rem;
-        margin: 5rem auto 1rem auto;
+        font-size: 2rem;
+        margin: 6.5rem auto 1rem auto;
+    }
+    .show{
+        width: 88vw;
+        margin: auto 1rem;
+        border: 1px black solid;
+        display: none;
+        animation: apearing 100ms linear forwards;
+        border-radius: 15px;
+    }
+    .first-project-img01, 
+    .second-project-img01{
+        display: inline;
+    }
+    .previous-img, 
+    .next-img, 
+    .previous-img02, 
+    .next-img02{
+        display: none;
+    }
+    .mobile-img-switch{
+        display: block;
+    }
+    .mobile-img-switch img{
+        width: 2rem;
+        height: 2rem;
+        margin: 0.7rem 1rem;
+    }
+    .previous-img:hover, 
+    .next-img:hover, 
+    .previous-img02:hover, 
+    .next-img02:hover{
+        cursor: pointer;
+        filter: invert(30%);
+        transform: scale(115%);
+    }
+    .project-keywords{
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+        width:fit-content;
+        margin: 1.5rem auto 0 auto;
+        font-size: 1rem;
+        border-radius: 15px;
+        width: 90%;
+    }
+    .project-keywords h2{
+        font-size: 1rem;
+    }
+    .project-keywords div{
+        padding: 0 2rem;
+        text-align: left;
+    }
+    .project-description{
+        width: 90%;
+        padding: 1rem 0.5rem;
+        margin: 1.5rem auto 2rem auto;
+        font-size: 1rem;
+        border-radius: 15px;
+    }
+    
+    .projects div button{
+        width: 5rem;
+        font-size: 1.2rem;
+        margin: 1.5rem 0.5rem 0 0.5rem;
+        border-radius: 30px;
+        padding: 0.3rem 0;
+        border: 2px solid var(--deep-purple);
+    }
+    .projects div button:hover{
+        box-shadow: 3px 3px 3px black;;
+        cursor: pointer;
+        color: rgb(97, 2, 107);
+    }
+    .close01, .close02{
+        background-color: var(--deep-purple);
+        color: white;
+    }
+    .close01:hover, 
+    .close02:hover{
+        background-color: transparent;
+        color: var(--deep-purple);
     }
 }
 
