@@ -1,24 +1,76 @@
+/* variables */
+:root{
+    --deep-purple: rgb(21, 0, 32);
+    --higher-pink: rgb(220, 0, 121);
+}
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
-nav, body, main{
-    margin: 0;
-    padding: 0;
-}
 body{
-    margin: 0;
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 3fr;
     overflow-y: hidden;
     }
-nav, main, #home, #about, #service, #resume, #portfolio, #contact{
+/* multiple selectors */
+nav, 
+body, 
+main, 
+.project p, 
+.projects, 
+.contact-form p, 
+.contact-form button{
+    margin: 0;
+    padding: 0;
+}
+
+nav, 
+main, 
+#home, 
+#about, 
+#service, 
+#resume, 
+#portfolio, 
+#contact{
     height: 100vh;
     border: solid transparent 1px;
 }
 
-/* Navigation bar */
+.nav-links a, 
+main button, 
+.project-img, 
+.project-container:hover 
+.utility-icon, 
+.previous-img, 
+.next-img, 
+.previous-img02, 
+.next-img02, 
+.projects div button{
+    transition: 300ms;
+}
 
+.about-div, 
+.service-div, 
+.resume-div, 
+.contact-div, 
+.project-container,
+.portfolio-div,
+.project-keywords,
+.project-description{
+    box-shadow: 3px 5px 10px black;
+}
+
+#about h2, 
+#service h2,
+#resume h2, 
+#portfolio h2, 
+#contact h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 6rem;
+}
+
+/* Navigation bar */
 nav{
     text-align: center;
     border-right: solid gray 1px;
@@ -35,7 +87,7 @@ nav{
 .name{
     font-size: 2rem;
     font-weight: bold;
-    color: rgb(220, 0, 121);
+    color: var(--higher-pink);
     margin-bottom: 1rem;
 }
 .icons img{
@@ -50,11 +102,9 @@ nav hr{
     margin:1.2rem 0;
     font-size: 1.2rem;
     letter-spacing: 2px;
-    transition: 300ms;
     text-decoration: none;
     color: black;
 }
-
 .nav-links a:visited{
     color: black;
 }
@@ -63,7 +113,10 @@ nav hr{
 }
 .nav-links a:hover{
     cursor: pointer;
-    color: rgb(234, 0, 140);
+    color: var(--higher-pink);
+}
+.mobile-nav{
+    display: none;
 }
 
 /* main */
@@ -79,7 +132,6 @@ main{
     margin: 15rem 0 0 4rem;
     animation: movingDown 0.6s linear forwards;
 }
-
 .into-p{
     font-size: 1.3rem;
     margin-left: 6rem;
@@ -88,18 +140,17 @@ main button{
     font-size: 1rem;
     color: rgb(242, 242, 242);
     width: 8rem;
-    padding:0.5rem;
+    padding: 0.5rem;
     font-weight: bold;
     margin-top: 2rem;
     white-space: nowrap;
-    background-color: rgb(21, 0, 32);
+    background-color: var(--deep-purple);
     outline: transparent;
-    border: 1px solid rgb(21, 0, 32);
+    border: 1px solid var(--deep-purple);
     border-radius: 25px;
-    transition: 300ms;
 }
 main button:hover{
-    color:rgb(21, 0, 32);
+    color:var(--deep-purple);
     background: transparent;
     cursor: pointer;
     box-shadow: 3px 3px 3px black;
@@ -110,13 +161,8 @@ main button:hover{
 .download-cv{
     margin-left: 0.5rem;
 }
-/* about section */
 
-#about h2, #service h2, #resume h2, #portfolio h2, #contact h2{
-    text-align: center;
-    font-size: 3rem;
-    margin-top: 6rem;
-}
+/* about section */
 .about-div, .service-div, .resume-div, .contact-div{
     border: solid gray 1px ;
     height: 20rem;
@@ -124,8 +170,8 @@ main button:hover{
     padding: 2rem;
     font-size: 1.5rem;
     border-radius: 15px;
-    box-shadow: 3px 5px 10px black;
 }
+
 /* services */
 .service-div{
     display: grid;
@@ -152,9 +198,10 @@ main button:hover{
     height: 3.5rem;
     border-radius: 15px;
 }
+
 /* about */
 .about-name{
-    color: rgb(234, 0, 140);
+    color: var(--higher-pink);
     font-weight: bolder;
 }
 .year{
@@ -162,7 +209,6 @@ main button:hover{
 }
 
 /* portfolio */
-
 .portfolio-div{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -170,7 +216,6 @@ main button:hover{
     margin:0 3rem;
     font-size: 1.5rem;
     border-radius: 15px;
-    box-shadow: 3px 5px 10px black;
     height: 27rem;
 }
 .project{
@@ -184,14 +229,12 @@ main button:hover{
     width: 90%;
     object-fit: cover;
     overflow: hidden;
-    box-shadow: 3px 5px 10px black;
     border-radius: 15px;
 }
 .project-img{
     width: 100%;
     margin: auto;
     height: 100%;
-    transition: 300ms;
 }
 .project-container:hover .project-img{
     transform: scale(120%);
@@ -207,20 +250,13 @@ main button:hover{
 }
 .project-container:hover .utility-icon{
     display: inline;
-    transition: 200ms;
 }
 .utility-icon:hover{
     cursor: pointer;
     filter: invert(90%);
 }
 .project p{
-    margin: 0;
-    padding: 0;
-    color: rgb(234, 0, 140);
-}
-
-.projects{
-    margin: 0
+    color: var(--higher-pink);
 }
 .project h4{
     margin: 1.5rem 0 1rem 0;
@@ -246,29 +282,7 @@ main button:hover{
     font-size: 3rem;
     margin: 5rem auto 1rem auto;
 }
-.first-project-img01,
-.first-project-img02,
-.first-project-img03,
-.first-project-img04,
-.first-project-img05,
-.first-project-img06,
-.first-project-img07,
-.first-project-img08,
-.first-project-img09,
-.second-project-img01,
-.second-project-img02,
-.second-project-img03,
-.second-project-img04,
-.second-project-img05,
-.second-project-img06,
-.second-project-img07,
-.second-project-img08,
-.second-project-img09,
-.second-project-img010,
-.second-project-img011,
-.second-project-img012,
-.second-project-img013
-{
+.show{
     width: 50vw;
     margin: auto 1rem;
     border: 1px black solid;
@@ -276,16 +290,22 @@ main button:hover{
     animation: apearing 100ms linear forwards;
     border-radius: 15px;
 }
-.first-project-img01, .second-project-img01{
+.first-project-img01, 
+.second-project-img01{
     display: inline;
 }
-.previous-img, .next-img, .previous-img02, .next-img02{
+.previous-img, 
+.next-img, 
+.previous-img02, 
+.next-img02{
     width: 3rem;
     height: 3rem;
     margin-bottom: 12rem;
-    transition: 300ms;
 }
-.previous-img:hover, .next-img:hover, .previous-img02:hover, .next-img02:hover{
+.previous-img:hover, 
+.next-img:hover, 
+.previous-img02:hover, 
+.next-img02:hover{
     cursor: pointer;
     filter: invert(30%);
     transform: scale(115%);
@@ -297,7 +317,6 @@ main button:hover{
     margin: 1.5rem auto 0 auto;
     font-size: 1.2rem;
     border-radius: 15px;
-    box-shadow: 3px 5px 10px black;
 }
 .project-keywords div{
     padding: 0 2rem;
@@ -309,7 +328,6 @@ main button:hover{
     margin: 1.5rem auto 2rem auto;
     font-size: 1.2rem;
     border-radius: 15px;
-    box-shadow: 3px 5px 10px black;
 }
 
 .projects div button{
@@ -318,8 +336,7 @@ main button:hover{
     margin: 1.5rem 0.5rem 0 0.5rem;
     border-radius: 30px;
     padding: 0.3rem 0;
-    border: 2px solid rgb(21, 0, 32);
-    transition: 300ms;
+    border: 2px solid var(--deep-purple);
 }
 .projects div button:hover{
     box-shadow: 3px 3px 3px black;;
@@ -327,14 +344,14 @@ main button:hover{
     color: rgb(97, 2, 107);
 }
 .close01, .close02{
-    background-color: rgb(21, 0, 32);
+    background-color: var(--deep-purple);
     color: white;
 }
-.close01:hover, .close02:hover{
+.close01:hover, 
+.close02:hover{
     background-color: transparent;
-    color: rgb(21, 0, 32);
+    color: var(--deep-purple);
 }
-
 
 /* contact */
 .contact-div{
@@ -356,24 +373,22 @@ main button:hover{
 }
 .contact-form p{
     border-bottom: solid gray 1px;
-    margin:0;
     padding:0.7rem 0 0.4rem 0;
 }
 .info-type{
-    color: rgb(234, 0, 140);
+    color: var(--higher-pink);
     margin-left: 1rem;
     font-weight: bold;
 }
 .contact-form button{
-    margin:0;
     margin-left: 3.5rem;
     padding: 0.3;
 }
 .sep{
-    color: rgb(234, 0, 140);
+    color: var(--higher-pink);
 }
-/* media queries */
 
+/* media queries */
 @media (min-width: 360px) and (max-width: 767px){
     body{
         display: block;
@@ -381,10 +396,58 @@ main button:hover{
     }
     nav{
         display: none;
+        position: absolute;
+        top: 0;
+        background-color: white;
+        z-index: 1
+    }
+    .mobile-nav{
+        display: block;
+        /* height: 5rem ; */
+        height: auto;
+        border: none;
+        border-bottom: 1px black solid;
+    }
+    .nav-links{
+        margin: 1rem 1rem 0.5rem;
+    }
+    .mobile-nav a{
+        display: inline;
+    }
+    .nav-links a img{
+        display: inline;
+        width: 1.25rem;
+        height: 1.25rem;
+        margin: 0 0.5rem;
+    }
+    .mobile-nav-inner-wrapper{
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        /* box-shadow: 3px 3px 15px 3px black; */
+    }
+    .name02{
+        display: block;
+        padding: 0;
+        margin: 0;
+        margin-left: 1.5rem ;
+        padding: 1rem 0;
+        font-size: 1.3rem;
+        font-weight: bolder;
+        color: var(--higher-pink)
+    }
+    .bottom-liner{
+        height: 1rem;
+        background-color: rgba(83, 244, 220, 0.483);
+        width: 100vw;
+        border: none
+    }
+    #home{
+        padding-top: 5rem;
     }
     .introduction{
         font-size: 2.3rem;
-        margin: 15rem 0 0 2rem;
+        margin: 0 0 0 2rem;
     }
     .into-p{
         font-size: 1.3rem;
@@ -407,7 +470,16 @@ main button:hover{
     #about h2, #service h2, #resume h2, #portfolio h2, #contact h2{
         text-align: center;
         font-size: 2rem;
-        margin-top: 4rem;
+        margin-top: 1rem;
+    }
+    #home, 
+    #about, 
+    #service, 
+    #resume, 
+    #portfolio, 
+    #contact{
+        height: 85vh;
+        border: solid transparent 1px;
     }
     .about-div, .service-div, .resume-div, .contact-div{
         height: auto;
