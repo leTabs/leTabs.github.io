@@ -18,12 +18,14 @@ const displayBlock = function(element){
     element.scrollTop = 0;
     document.querySelector('main').style.filter = 'blur(8px)'
     document.querySelector('nav').style.filter = 'blur(8px)'
+    document.querySelector('.mobile-nav-inner-wrapper').style.filter = 'blur(8px)'
 }
 
 const displayNone = function(element){
     element.style.display = 'none'
     document.querySelector('main').style.filter = 'blur(0)'
     document.querySelector('nav').style.filter = 'blur(0)'
+    document.querySelector('.mobile-nav-inner-wrapper').style.filter = 'blur(0)'
 }
 
 // 
@@ -33,8 +35,10 @@ const firstProject = document.querySelector('.first-project');
 const closeButton01 = document.querySelector('.close01');
 const nextImgButton = document.querySelector('.next-img');
 const previousImgButton = document.querySelector('.previous-img');
-
-
+const nextImgButtonMobile = document.querySelector('.mobile-next-img')
+const previousImgButtonMobile = document.querySelector('.mobile-previous-img')
+const nextImgButtonMobile02 = document.querySelector('.mobile-next-img02')
+const previousImgButtonMobile02 = document.querySelector('.mobile-previous-img02')
 
 projectDisplay01.addEventListener('click', ()=>{
     displayBlock(firstProject)
@@ -82,6 +86,33 @@ nextImgButton02.addEventListener('click', ()=>{
     document.querySelector(`.second-project-img0${imgIndex02}`).style.display = 'inline'
 })
 previousImgButton02.addEventListener('click', ()=>{
+    document.querySelector(`.second-project-img0${imgIndex02}`).style.display = 'none'
+    if(imgIndex02 > 1){
+    imgIndex02--}
+    document.querySelector(`.second-project-img0${imgIndex02}`).style.display = 'inline'
+})
+
+// mobile version 
+nextImgButtonMobile.addEventListener('click', ()=>{
+    document.querySelector(`.first-project-img0${imgIndex01}`).style.display = 'none'
+    if(imgIndex01 < 8){
+    imgIndex01++}
+    document.querySelector(`.first-project-img0${imgIndex01}`).style.display = 'inline'
+})
+previousImgButtonMobile.addEventListener('click', ()=>{
+    document.querySelector(`.first-project-img0${imgIndex01}`).style.display = 'none'
+    if(imgIndex01 > 1){
+    imgIndex01--}
+    document.querySelector(`.first-project-img0${imgIndex01}`).style.display = 'inline'
+})
+
+nextImgButtonMobile02.addEventListener('click', ()=>{
+    document.querySelector(`.second-project-img0${imgIndex02}`).style.display = 'none'
+    if(imgIndex02 < 13){
+    imgIndex02++}
+    document.querySelector(`.second-project-img0${imgIndex02}`).style.display = 'inline'
+})
+previousImgButtonMobile02.addEventListener('click', ()=>{
     document.querySelector(`.second-project-img0${imgIndex02}`).style.display = 'none'
     if(imgIndex02 > 1){
     imgIndex02--}
