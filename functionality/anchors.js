@@ -12,20 +12,19 @@ gitImage.addEventListener('click', ()=>{
     window.location = 'https://github.com/leTabs'
 })
 
-
 const displayBlock = function(element){
     element.style.display = 'block'
     element.scrollTop = 0;
     document.querySelector('main').style.filter = 'blur(8px)'
     document.querySelector('nav').style.filter = 'blur(8px)'
-    document.querySelector('.mobile-nav-inner-wrapper').style.filter = 'blur(8px)'
+    document.querySelector('.mobile-nav-inner-wrapper').style.display = 'none'
 }
 
 const displayNone = function(element){
     element.style.display = 'none'
     document.querySelector('main').style.filter = 'blur(0)'
     document.querySelector('nav').style.filter = 'blur(0)'
-    document.querySelector('.mobile-nav-inner-wrapper').style.filter = 'blur(0)'
+    document.querySelector('.mobile-nav-inner-wrapper').style.display = 'flex'
 }
 
 // 
@@ -47,18 +46,23 @@ closeButton01.addEventListener('click', ()=>{
     displayNone(firstProject)
 })
 
-
-nextImgButton.addEventListener('click', ()=>{
-    document.querySelector(`.first-project-img0${imgIndex01}`).style.display = 'none'
-    if(imgIndex01 < 8){
+const nextImage = function(prefix, totalImages){
+    document.querySelector(`.${prefix}-project-img0${imgIndex01}`).style.display = 'none'
+    if(imgIndex01 < totalImages){
     imgIndex01++}
-    document.querySelector(`.first-project-img0${imgIndex01}`).style.display = 'inline'
-})
-previousImgButton.addEventListener('click', ()=>{
-    document.querySelector(`.first-project-img0${imgIndex01}`).style.display = 'none'
+    document.querySelector(`.${prefix}-project-img0${imgIndex01}`).style.display = 'inline'
+}
+const previousImage = function(prefix){
+    document.querySelector(`.${prefix}-project-img0${imgIndex01}`).style.display = 'none'
     if(imgIndex01 > 1){
     imgIndex01--}
-    document.querySelector(`.first-project-img0${imgIndex01}`).style.display = 'inline'
+    document.querySelector(`.${prefix}-project-img0${imgIndex01}`).style.display = 'inline'
+}
+nextImgButton.addEventListener('click', ()=>{
+    nextImage('first', 8);
+})
+previousImgButton.addEventListener('click', ()=>{
+    previousImage('first')
 })
 
 // second
@@ -80,41 +84,30 @@ closeButton02.addEventListener('click', ()=>{
 
 
 nextImgButton02.addEventListener('click', ()=>{
-    document.querySelector(`.second-project-img0${imgIndex02}`).style.display = 'none'
-    if(imgIndex02 < 13){
-    imgIndex02++}
-    document.querySelector(`.second-project-img0${imgIndex02}`).style.display = 'inline'
+    nextImage('second', 13)
 })
 previousImgButton02.addEventListener('click', ()=>{
-    document.querySelector(`.second-project-img0${imgIndex02}`).style.display = 'none'
-    if(imgIndex02 > 1){
-    imgIndex02--}
-    document.querySelector(`.second-project-img0${imgIndex02}`).style.display = 'inline'
+    previousImage('second')
 })
 
 // mobile version 
 nextImgButtonMobile.addEventListener('click', ()=>{
-    document.querySelector(`.first-project-img0${imgIndex01}`).style.display = 'none'
-    if(imgIndex01 < 8){
-    imgIndex01++}
-    document.querySelector(`.first-project-img0${imgIndex01}`).style.display = 'inline'
+    nextImage('first', 8)
 })
 previousImgButtonMobile.addEventListener('click', ()=>{
-    document.querySelector(`.first-project-img0${imgIndex01}`).style.display = 'none'
-    if(imgIndex01 > 1){
-    imgIndex01--}
-    document.querySelector(`.first-project-img0${imgIndex01}`).style.display = 'inline'
+    previousImage('first')
 })
 
 nextImgButtonMobile02.addEventListener('click', ()=>{
-    document.querySelector(`.second-project-img0${imgIndex02}`).style.display = 'none'
-    if(imgIndex02 < 13){
-    imgIndex02++}
-    document.querySelector(`.second-project-img0${imgIndex02}`).style.display = 'inline'
+    nextImage('second', 13)
 })
 previousImgButtonMobile02.addEventListener('click', ()=>{
-    document.querySelector(`.second-project-img0${imgIndex02}`).style.display = 'none'
-    if(imgIndex02 > 1){
-    imgIndex02--}
-    document.querySelector(`.second-project-img0${imgIndex02}`).style.display = 'inline'
+    previousImage('second')
+})
+
+
+// 
+
+document.querySelector('.talk-to-me').addEventListener('click', ()=>{
+    document.querySelector('main').scrollTop = 2750;
 })
