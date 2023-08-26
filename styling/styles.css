@@ -46,7 +46,8 @@ main button,
 .previous-img02, 
 .next-img02, 
 .projects div button, 
-.mobile-img-switch img{
+.mobile-img-switch img,
+.icons img{
     transition: 300ms;
 }
 
@@ -94,6 +95,10 @@ nav{
 .icons img{
     width: 1.5rem;
     height: 1.5rem;
+}
+.icons img:hover{
+    cursor: pointer;
+    filter: invert(30%)
 }
 nav hr{
     width: 85%;
@@ -236,10 +241,11 @@ main button:hover{
     width: 100%;
     margin: auto;
     height: 100%;
+    object-fit: cover;
 }
 .project-container:hover .project-img{
-    transform: scale(120%);
-    filter:blur(6px);
+    transform: scale(115%);
+    filter:blur(2.5px);
 }
 .utility-icon{
     width: 2.2rem;
@@ -301,7 +307,7 @@ main button:hover{
 .next-img02{
     width: 3rem;
     height: 3rem;
-    margin-bottom: 12rem;
+    margin-bottom: 7rem;
 }
 .previous-img:hover, 
 .next-img:hover, 
@@ -384,7 +390,7 @@ main button:hover{
 }
 .contact-form button{
     margin-left: 3.5rem;
-    padding: 0.3;
+    padding: 0.5rem ;
 }
 .sep{
     color: var(--higher-pink);
@@ -393,8 +399,12 @@ main button:hover{
 .mobile-img-switch{
     display: none;
 }
+.mobile-contact-div{
+    display: none;
+}
 /* media queries */
-@media (min-width: 360px) and (max-width: 767px){
+/* @media (min-width: 360px) and (max-width: 767px) */
+@media (min-width: 0px) and (max-width: 781px){
     body{
         display: block;
         overflow-y: hidden;
@@ -521,7 +531,7 @@ main button:hover{
         grid-template-columns: 1fr;
         font-size: 1.2rem;
         height: auto;
-        padding: 0
+        padding: 0 0 1rem 0
     }
     .project{
         margin:0.5rem;
@@ -535,12 +545,9 @@ main button:hover{
         height: 100vh;
         padding-bottom: 1rem;
     }
-    .first-project{
-        display: block;
-    }
     .project-title{
         font-size: 1.7rem;
-        margin: 7.5rem auto 1rem auto;
+        margin: 4.5rem auto 1rem auto;
     }
     .show{
         width: 88vw;
@@ -575,8 +582,33 @@ main button:hover{
         width: 90%;
         font-size: 1rem;
     }
+    /* contact */
 
-
+    .contact-form{
+        display: none;
+    }
+    .contact-form button{
+        padding: 0.3rem ;
+    }
+    .contact-div img{
+        margin: auto auto auto 0 ;
+        width: 2rem;
+        height: 2rem;
+        display: inline-block;
+    }
+    .mobile-contact-div{
+        display: block;
+    }
+    .mobile-contact-div span{
+        display: flex;
+        justify-content:center;
+        border-bottom: solid 1px rgb(0, 0, 0);
+        padding: 0 1rem 
+    }
+    .mobile-contact-div span p{
+        text-align: left;
+        margin: 0.5rem auto 1rem 0
+    }
 }
 
 @keyframes apearing {
