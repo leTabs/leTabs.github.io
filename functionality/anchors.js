@@ -130,3 +130,25 @@ previousImgButtonMobile02.addEventListener('click', ()=>{
 
 // 
 
+const destinationHandler = function(className, destination){
+    document.querySelector(`.${className}`).addEventListener('click', ()=>{
+        window.location = destination
+    })
+}
+// docs
+destinationHandler('first-doc01', 'documentations/Thematic Chatrooms Documentation.pdf')
+destinationHandler('first-doc02', 'documentations/Thematic Chatrooms Documentation.pdf')
+destinationHandler('second-doc01', 'documentations/Blog Page Documentation.pdf')
+destinationHandler('second-doc02', 'documentations/Blog Page Documentation.pdf')
+
+// github visit
+destinationHandler('first-github01', 'https://github.com/leTabs/Thematic-Chat-Rooms')
+destinationHandler('first-github02', 'https://github.com/leTabs/Thematic-Chat-Rooms')
+destinationHandler('second-github01', 'https://github.com/leTabs/Webpage-Templates/tree/main')
+destinationHandler('second-github02', 'https://github.com/leTabs/Webpage-Templates/tree/main')
+
+
+const viewCV = document.querySelector('.view-cv')
+viewCV.addEventListener('click', ()=>{
+    window.location = "https://resume.io/r/5ZhSiYEVF"
+})
