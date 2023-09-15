@@ -337,28 +337,25 @@ main button:hover{
     font-size: 1.2rem;
     border-radius: 15px;
 }
-
-.projects div button{
-    width: 5rem;
-    font-size: 1.2rem;
-    margin: 1.5rem 0.5rem 0 0.5rem;
-    border-radius: 30px;
-    padding: 0.3rem 0;
-    border: 2px solid var(--deep-purple);
+.close01,
+.close02,
+.first-github02,
+.first-doc02,
+.second-github02,
+.second-doc02{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 3rem 2.5rem 1rem 2.5rem;
+    transition: 300ms;
 }
-.projects div button:hover{
-    box-shadow: 3px 3px 3px black;;
+.close01:hover,
+.close02:hover,
+.first-github02:hover,
+.first-doc02:hover,
+.second-github02:hover,
+.second-doc02:hover{
     cursor: pointer;
-    color: rgb(97, 2, 107);
-}
-.close01, .close02{
-    background-color: var(--deep-purple);
-    color: white;
-}
-.close01:hover, 
-.close02:hover{
-    background-color: transparent;
-    color: var(--deep-purple);
+    transform: scale(125%);
 }
 
 /* contact */
@@ -581,6 +578,30 @@ main button:hover{
     .project-description{
         width: 90%;
         font-size: 1rem;
+    }
+
+
+    .first-project{
+        display: block;
+    }
+    .close01,
+    .close02,
+    .first-github02,
+    .first-doc02,
+    .second-github02,
+    .second-doc02{
+        width: 2rem;
+        height: 2rem;
+        margin: 2rem 1rem 1rem 1rem;
+    }
+    .close01:hover,
+    .close02:hover,
+    .first-github02:hover,
+    .first-doc02:hover,
+    .second-github02:hover,
+    .second-doc02:hover{
+        cursor: pointer;
+        transform: scale(125%);
     }
     /* contact */
 
