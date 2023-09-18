@@ -283,7 +283,7 @@ main button:hover{
     padding-bottom: 1rem;
     border: solid black 2px;
     border-radius: 5px;
-    
+    padding-top: 3rem;
 }
 .project-title{
     font-size: 3rem;
@@ -578,11 +578,6 @@ main button:hover{
     .project-description{
         width: 90%;
         font-size: 1rem;
-    }
-
-
-    .first-project{
-        display: block;
     }
     .close01,
     .close02,
