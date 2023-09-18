@@ -625,6 +625,9 @@ main button:hover{
         text-align: left;
         margin: 0.5rem auto 1rem 0
     }
+    #contact{
+        height: 72vh
+    }
 }
 
 @keyframes apearing {
