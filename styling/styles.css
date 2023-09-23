@@ -399,6 +399,9 @@ main button:hover{
 .mobile-contact-div{
     display: none;
 }
+.contact-div{
+    padding-bottom: 1.5rem;
+}
 /* media queries */
 /* @media (min-width: 360px) and (max-width: 767px) */
 @media (min-width: 0px) and (max-width: 781px){
