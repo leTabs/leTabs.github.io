@@ -24,6 +24,9 @@ h3{
     word-spacing: 1.5rem;
     animation: h3-dance 3s ease-in-out infinite;
     text-shadow: 5px 5px 15px black;
+    text-align: center;
+    width: fit-content;
+    max-width: 75%;
 }
 
 a{
@@ -68,3 +71,10 @@ a:hover{
         left: 4rem;
     }
 }
+
+/* media queries */
+@media only screen and (max-width: 400px){
+    h3{
+        font-size: 2rem;
+        padding: 2rem 3rem;
+    }}
