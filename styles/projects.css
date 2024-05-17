@@ -1,0 +1,277 @@
+
+/* sections */
+.section-general-desc{
+    padding-top: 5rem;
+}
+.description{
+        font-size: 1.5rem;
+        width: 50%;
+        margin: 2.5rem auto;
+        text-align: justify;
+        letter-spacing: 0.1rem;
+}
+.hr-desc-bottom{
+    width: 75%;
+    margin: 0 auto;
+    border-top: solid 1px black
+}
+.template-display{
+    padding-top: 8rem;
+}
+.display-img-description-pair,
+.template-display-btn-container{
+    display: grid;
+    grid-template-columns: 1.35fr 0.5fr;
+}
+.display-img-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.display-img-description-pair img{
+    width: 85%;
+    height: 100%;
+    border: solid 1px gray;
+    object-fit: cover;
+    box-shadow: 3px 3px 15px black;
+}
+.display-text-wrapper{
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.display-img-description-pair p{
+    width: 75%;
+    color: white;
+    text-align: center;
+    font-size: 1.35rem;
+    padding-bottom: 2.5rem;
+    letter-spacing: 0.05rem;
+    border-bottom: solid gray 1px;
+}
+
+.template-display-btn-container{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1.35fr 0.5fr;
+}
+.template-display-btn-container div:first-of-type{
+    display: flex;
+    justify-content: center;
+}
+.template-display-btn-container button{
+    font-size: 1rem;
+    width: 15vw;
+    padding: 0.4rem 0;
+    border: solid 2px;
+    color: white;
+    background-color: rgb(36, 36, 36);
+    transition: 250ms;
+    cursor: pointer;
+}
+.template-display-btn-container button:hover{
+    background-color: rgb(0, 0, 0);
+}
+.template-display-btn-container button:first-of-type{
+    border-radius: 20px 0 0 20px;
+}
+.template-display-btn-container button:nth-of-type(2){
+    border-radius: 0 20px 20px 0;
+}
+
+
+/* it uses the same css as the h3 in the home page sections */
+section h3{
+        font-size: 2.75rem;
+        margin: 3rem auto 2rem auto;
+        text-align: center;
+        width: calc(100% - 13.4rem);
+        letter-spacing: 0.15rem;
+        word-spacing: 0.3rem;
+        padding: 0 1.3rem 1.5rem 1.3rem;
+        border-bottom: solid 1px black;
+}
+/* section all images */
+.template-all-imgs{
+    padding-top: 5rem;
+}
+.expand-hide-btn-wrapper{
+    width: 50%;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.expand-hide-btn-wrapper button{
+    font-size: 1.2rem;
+    padding: 0.2rem 1.5rem 0.1rem 1.5rem;
+    background-color: rgba(104, 104, 104, 0);
+    border: solid 1px rgba(128, 128, 128, 0);
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    cursor: pointer;
+    transition: 250ms;
+}
+.expand-hide-btn-wrapper button:hover{
+    /* background-color: rgb(209, 209, 209); */
+    border-color: black;
+}
+.expand-hide-btn-wrapper span{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block;
+    margin: 1.5rem;
+}
+.all-imgs-span{
+    display: inline-block;
+    margin-left: 15%;
+    margin-bottom: 0.5rem;
+}
+.all-imgs-span img{
+    margin-right: 1rem;
+}
+.all-imgs-span p{
+    margin: 0;
+    display: inline;
+    font-size: 1.3rem;
+}
+.expand-hide-icon{
+    width: 1rem;
+    height: 1rem;
+    border:solid 1px black;
+    padding: 0 0.1rem;
+    cursor: pointer;
+    transition: 250ms;
+}
+.expand-hide-icon:hover{
+    box-shadow: 3px 3px black;
+}
+.all-imgs-wrapper{
+    margin: 1.5rem 0;
+}
+.img-container{
+    width: calc(70% - 4rem);
+    height: 1vh;
+    background-color: rgb(196, 196, 196);
+    margin: 0.25rem auto 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+    transition: 250ms;
+}
+.img-container img{
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    z-index: 1;
+    animation: appearing-img 0.5s linear forwards;
+}
+@keyframes appearing-img {
+    100%{
+        opacity: 1;
+    }
+}
+
+/* communications */
+
+/*  */
+
+/* exacly the same as in index */
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .description{
+            font-size: 1.5rem;
+            width: 80%;
+    }
+    section h3{
+        font-size: 2.25rem;
+        width:85%;
+        padding:0 0 1rem 0;
+    }
+    .hr-desc-bottom{
+        width: 85%;
+    }
+    .template-display{
+        padding-top: 8rem;
+    }
+    .display-img-description-pair,
+    .template-display-btn-container{
+        display: block;
+    }
+    .display-img-description-pair img{
+        width: 100%;
+    }
+    .display-text-wrapper{
+        height: 30vh;
+        overflow: auto;
+        margin-top: 2rem;
+    }
+    .display-img-description-pair p{
+        font-size: 1.4rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .template-display-btn-container{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        display: block;
+    }
+    .template-display-btn-container button{
+        width: 40vw;
+    }
+    /* section all images */
+    .template-all-imgs{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px){
+    .description{
+            font-size: 1.5rem;
+            width: 80%;
+    }
+    section h3{
+        font-size: 2.25rem;
+        width:85%;
+        padding:0 0 1rem 0;
+    }
+    .hr-desc-bottom{
+        width: 85%;
+    }
+    .template-display{
+        padding-top: 8rem;
+    }
+    .display-img-description-pair,
+    .template-display-btn-container{
+        display: block;
+    }
+    .display-img-description-pair img{
+        width: 100%;
+    }
+    .display-text-wrapper{
+        height: 30vh;
+        overflow: auto;
+        margin-top: 2rem;
+    }
+    .display-img-description-pair p{
+        font-size: 1.4rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .template-display-btn-container{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        display: block;
+    }
+    .template-display-btn-container button{
+        width: 40vw;
+    }
+    .template-all-imgs{
+        display: none;
+    }
+}
