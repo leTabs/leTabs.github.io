@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 html, section, main, body{
     margin: 0;
@@ -174,7 +175,7 @@ footer p a:hover{
     background-color: white;
     display: none;
     transition: 250ms;
-    z-index: 100;
+    z-index: 8;
 }
 .certifications-container h2{
     font-size: 2rem;
@@ -265,7 +266,7 @@ footer p a:hover{
     display: none;
     border: solid 10px rgb(0, 0, 0);
     transition: 250ms;
-    z-index: 9
+    z-index: 8;
 }
 .cv-container h2{
     font-size: 2rem;
@@ -319,7 +320,7 @@ footer p a:hover{
     position: fixed;
     width: 100vw;
     top: 0;
-    z-index: 11;
+    z-index: 10;
     height: 5rem;
 }
 .mob-nav h2{
@@ -368,13 +369,17 @@ footer p a:hover{
 .mob-nav-destinations p{
     margin: 1rem auto;
     width: 70%;
-    /* color: white; */
     background-color: rgb(255, 255, 255);
     padding-top: 0.5rem;
     padding-bottom: 0.75rem;
     border-radius: 15px;
     text-align: center;
     font-size: 1.2rem;
+    transition: 150ms;
+}
+.mob-nav-destinations p:active{
+    background-color: rgb(77, 77, 77);
+    color: white
 }
 .mob-nav-container-bottom{
     display: flex;
