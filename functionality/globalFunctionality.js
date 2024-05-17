@@ -204,3 +204,8 @@ cpi03.addEventListener('click', ()=>{
 
 
 //[...]
+// DOC mob nav element
+const mobNavContainerImg = document.querySelector('.mob-nav-container-img')
+mobNavContainerImg.addEventListener('click', ()=>{
+    window.location = 'index.html'
+})
