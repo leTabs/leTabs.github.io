@@ -75,6 +75,8 @@ nav p:hover{
 /*  */
 .section-communication{
     height: auto;
+    width: fit-content;
+    overflow-x: auto;
 }
 .contact-container{
     width: calc(100% - 14rem);
@@ -371,7 +373,7 @@ footer p a:hover{
     padding-bottom: 0.75rem;
     border-radius: 15px;
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
 }
 .mob-nav-container-bottom{
     display: flex;
@@ -390,6 +392,8 @@ footer p a:hover{
 }
 .mob-nav-container-bottom img{
     filter: invert(100%);
+    width: 2rem;
+    height: 2rem
 }
 @media only screen and (min-width: 320px) and (max-width: 480px){
     html{
@@ -402,7 +406,8 @@ footer p a:hover{
         display: flex;
     }
     .contact-container{
-        width: 100vw;
+        width: 100%;
+        max-width: 100%;
         padding: 2rem 1rem 1rem 1rem;
         display: block;
     }
