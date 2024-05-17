@@ -75,8 +75,9 @@ nav p:hover{
 /*  */
 .section-communication{
     height: auto;
-    width: fit-content;
-    overflow-x: auto;
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 .contact-container{
     width: calc(100% - 14rem);
