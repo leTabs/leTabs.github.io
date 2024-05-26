@@ -51,8 +51,8 @@ navLeft.addEventListener('click', ()=>{
 let imageDisplaySwitchArray = [false, false, false, false, false]
 
 function imageOpener(iterator){
-        imgFrameArray[iterator].style.height = '68vh'
-        imgFrameArray[iterator].style.padding = '2rem 2rem'
+        imgFrameArray[iterator].style.height = '100%'
+        imgFrameArray[iterator].style.padding = '2rem'
         expandHideBtnArray[iterator].src = 'images/icons/minus-solid.svg'
         imageDisplaySwitchArray[iterator] = true
         setTimeout(()=>{
@@ -64,8 +64,8 @@ function imageCloser(iterator){
     templateImgArray[iterator].style.display = 'none'
     expandHideBtnArray[iterator].src = 'images/icons/plus-solid.svg'
     imageDisplaySwitchArray[iterator] = false
+    imgFrameArray[iterator].style.height = '1vh'
     setTimeout(()=>{
-        imgFrameArray[iterator].style.height = '1vh'
         imgFrameArray[iterator].style.padding = '0rem 2rem'
     }, 250)
 }
@@ -82,8 +82,8 @@ for(let i = 0; i < expandHideBtnArray.length; i++){
 
 expandAllBtn.addEventListener('click', ()=>{
     for(let i = 0; i < expandHideBtnArray.length; i++){
-        imgFrameArray[i].style.height = '70vh'
-        imgFrameArray[i].style.padding = '2rem 2rem'
+        imgFrameArray[i].style.height = '100%'
+        imgFrameArray[i].style.padding = '2rem'
         expandHideBtnArray[i].src = 'images/icons/minus-solid.svg'
         imageDisplaySwitchArray[i] = true
         
@@ -99,8 +99,8 @@ collapseAllBtn.addEventListener('click', ()=>{
         templateImgArray[i].style.display = 'none'
         expandHideBtnArray[i].src = 'images/icons/plus-solid.svg'
         imageDisplaySwitchArray[i] = false
+        imgFrameArray[i].style.height = '1vh'
         setTimeout(()=>{
-            imgFrameArray[i].style.height = '1vh'
             imgFrameArray[i].style.padding = '0rem 2rem'
         }, 250)
     }
