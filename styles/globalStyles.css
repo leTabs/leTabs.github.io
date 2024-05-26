@@ -443,7 +443,7 @@ footer p a:hover{
     }
 }
 /* tablet sizes */
-@media only screen and (min-width:481px) and (max-width: 950px){
+@media only screen and (min-width:481px) and (max-width: 1024px){
     html{
         overflow-x: hidden;
     }
