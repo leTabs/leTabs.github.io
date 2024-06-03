@@ -397,3 +397,40 @@ section h3{
         animation: appearing-img 0.5s linear forwards;
     }
 }
+
+@media only screen and (min-width: 2350px) and (max-width: 3600px){
+    .section-general-desc, .template-all-imgs{
+        padding-top: 12rem;
+    }
+    section h3{
+        font-size: 6rem;
+    }
+    .description{
+            font-size: 3.25rem;
+    }
+    .display-img-description-pair p{
+        font-size: 3.25rem;
+    }
+    .template-display-btn-container button{
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+    .expand-hide-btn-wrapper button{
+        font-size: 2rem;
+    }
+    .expand-hide-btn-wrapper button:hover{
+        border-color: black;
+    }
+    .all-imgs-span img{
+        margin-right: 1.5rem;
+    }
+    .all-imgs-span p{
+        margin: 0;
+        display: inline;
+        font-size: 2rem;
+    }
+    .expand-hide-icon{
+        width: 2rem;
+        height: 2rem;
+    }
+}
