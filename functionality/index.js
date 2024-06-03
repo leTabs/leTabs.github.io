@@ -83,3 +83,36 @@ mobNavIcon.addEventListener('click', ()=>{
         closeMobNavContainer()
     }
 })
+
+
+
+
+// [...]
+function animationScrollTrigger(target, animation){
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.6
+    };
+    const callback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(animation);
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+    const observer = new IntersectionObserver(callback, options);
+    observer.observe(target)
+}
+
+const projectImgContainerArray = document.querySelectorAll('.project-img-container')
+const currentSkillArray = document.querySelectorAll('.current-skill')
+for(let i = 0; i < projectImgContainerArray.length; i++){
+    animationScrollTrigger(projectImgContainerArray[i], 'pro-img-container')
+}
+for(let i = 0; i < currentSkillArray.length; i++){
+    animationScrollTrigger(currentSkillArray[i], 'current-skill-animation')
+}
+const homeViewCvBtn = document.querySelector('.home-view-cv-btn')
+animationScrollTrigger(homeViewCvBtn, 'home-cv-animation')
