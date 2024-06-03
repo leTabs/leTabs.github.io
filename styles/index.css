@@ -497,3 +497,84 @@
         height: 4rem;
     }
 }
+
+@media only screen and (min-width: 2350px) and (max-width: 3600px){
+    .home-left-div-text-wrapper h2{
+        font-size: 8rem;
+        line-height: 9.5rem;
+    }
+    .home-left-div-text-wrapper p{
+        /* width: 80%; */
+        font-size: 3.25rem;
+        line-height: 4.25rem;
+    }
+    .home-left-div-text-wrapper button{
+        font-size: 2rem;
+    }
+    /*  */
+    /* my work */
+    .section-my-work, .section-skills{
+        padding-top: 12rem;
+    }
+    .project-container{
+        margin: 2.5rem auto 5rem auto ;
+        height: fit-content;
+        text-align: center;
+        width: 96.5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .project-text-container{
+        width: 40%
+    }
+    .project-img-container{
+        width: 60%;
+    }
+    .project-text-container h3{
+        font-size: 6rem;
+    }
+    .project-text-container p{
+        font-size: 3.25rem;
+        width: 50%;
+    }
+    .project-container a{
+        font-size: 2.5rem;
+    }
+
+    /* section skills */
+    .section-skills h3{
+        font-size: 6rem;
+    }
+    .skills-wrapper{
+        width: calc(45% - 10rem);
+        margin: 4rem  auto 0 auto;
+    }
+    .current-skill{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        opacity: 0;
+    }
+    .current-skill:nth-of-type(2){
+        animation-delay: 0.25s;
+    }
+    .current-skill:nth-of-type(3){
+        animation-delay: 0.5s;
+    }
+    .current-skill-animation{
+        animation: current-skill 0.5s ease-in forwards;
+    }
+    .current-skill img{
+        width: 15rem;
+        height: 15rem;
+    }
+    .current-skill p{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .skills-tech img{
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+}
