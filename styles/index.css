@@ -5,53 +5,74 @@
 .home-divs-wrapper{
     height: fit-content;
     max-height: 100vh;
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    /* display: grid; */
+    /* grid-template-columns: 0.5fr 1fr; */
     overflow: hidden;
 }
 .home-left-div{
+    padding-top: 3.5rem;
     overflow: hidden;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     animation: opening-left-div 0.5s linear forwards;
+    background: linear-gradient(180deg, rgb(201, 201, 201) ,rgb(215, 215, 215), white, white);
 }
 @keyframes opening-left-div {
     0%{
         opacity: 0;
     }
-    100%{
-        opacity: 1;
-    }
 }
 .home-left-div-text-wrapper{
-    border: solid 2px rgb(0, 0, 0);
-    width: 85%;
+    width: 100%;
     height: fit-content;
     text-align: center;
     margin-top: 4.5rem;
 }
+@keyframes opening-text-h2{
+    0%{
+        transform: translate(0%, 30%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+}
 .home-left-div-text-wrapper h2{
-    margin: 4rem auto 2rem auto;
+    margin: 3rem auto 2rem auto;
     width: 75%;
-    font-size: 2.2rem;
+    font-size: 4rem;
     letter-spacing: 0.2rem;
     word-spacing: 0.6rem;
-    line-height: 3rem;
+    line-height: 4.5rem;
+    animation: opening-text-h2 0.75s ease-in forwards;
 }
 .home-left-div-text-wrapper hr{
     margin: 0 auto;
     border: solid 1px black;
-    width: 80%
+    width: 75%
 }
 .home-left-div-text-wrapper p{
     width: 80%;
     margin: 2rem auto 0 auto;
-    font-size: 1.35rem;
+    font-size: 2rem;
     letter-spacing: 0.05rem;
     text-align: center;
+    animation: opening-text-p 0.75s ease-in forwards;
+}
+
+@keyframes opening-text-p{
+    0%{
+        transform: translate(0%, -30%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
 }
 .home-left-div-text-wrapper button{
     margin: 2rem 0 4rem 0;
@@ -63,18 +84,29 @@
     outline: none;
     transition: 250ms;
     cursor: pointer;
+    opacity: 0;
+    transform: translate(0%, 170%);
+}
+.home-cv-animation{
+    animation: home-cv-animation 0.5s ease-in forwards
+}
+@keyframes home-cv-animation {
+    100%{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
 }
 .home-left-div-text-wrapper button:hover{
     background-color: white;
     color: black;
     border: solid 1px black;
 }
-.home-right-div img{
+/* .home-right-div img{
     width: 100%;
     height: 100vh;
     animation: opening-right-div 0.5s linear forwards;
     object-fit: cover;
-}
+} */
 @keyframes opening-right-div {
     0%{
         filter: saturate(0%);
@@ -86,7 +118,7 @@
 /*  */
 .intern-hr{
     margin: 2.5rem auto 0 auto;
-    width: 75%;
+    width: 25%;
     border: solid 2px black
 }
 /* my work */
@@ -97,24 +129,23 @@
     padding-top: 5rem;
 }
 .project-container{
-    display: grid;
-    grid-template-columns: 0.75fr 1fr;
     margin: 2.5rem auto 5rem auto ;
     height: fit-content;
     text-align: center;
     width: 96.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.project-container:nth-of-type(2),
-.project-container:nth-of-type(4){
-    grid-template-columns: 1fr 0.75fr;
-}
+
 .project-text-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 75%
 }
 .project-text-container h3{
-    font-size: 2.25rem;
+    font-size: 2.75rem;
     text-align: center;
     margin: 3rem  auto 0 auto;
     letter-spacing: 0.15rem;
@@ -131,11 +162,11 @@
 .project-text-container p{
     font-size: 1.5rem;
     width: 75%;
-    margin: 1.5rem auto;
+    margin: 1.65rem auto;
     letter-spacing: 0.1rem;
 }
 .project-container a{
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     padding: 0.5rem 2.5rem;
     display: block;
     margin: 3rem auto 2rem auto;
@@ -190,6 +221,25 @@
     width: 100%;
     margin: 0;
     text-align: center;
+    opacity: 0;
+}
+.current-skill:nth-of-type(2){
+    animation-delay: 0.25s;
+}
+.current-skill:nth-of-type(3){
+    animation-delay: 0.5s;
+}
+.current-skill-animation{
+    animation: current-skill 0.5s ease-in forwards;
+}
+@keyframes current-skill {
+    0%{
+        transform: translate(0%, 25%);
+    }
+    100%{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
 }
 .current-skill img{
     width: 8rem;
@@ -222,6 +272,15 @@
     .home-right-div img{
         display: none;
     }
+    .home-left-div-text-wrapper h2{
+        margin: 2rem auto 2rem auto;
+        font-size: 2.25rem;
+        letter-spacing: 0.2rem;
+        line-height: 3rem;
+    }
+    .home-left-div-text-wrapper p{
+        font-size: 1.6rem;
+    }
     /*  */
     /* my work */
     .section-my-work, .section-skills{
@@ -232,6 +291,9 @@
     }
     .project-img-container{
         display: none;
+    }
+    .project-text-container{
+        width: 100%;
     }
     /* section skills */
     .section-skills h3{
@@ -287,5 +349,25 @@
     }
     .project-img-container{
         display: none;
+    }    .project-text-container{
+        width: 100%;
+    }
+}
+
+.project-img-container{
+    transform: translate(10%, 0%);
+    opacity: 0;
+}
+.project-img-container:nth-of-type(2),
+.project-img-container:nth-of-type(4){
+    transform: translate(-10%, 0%);
+}
+.pro-img-container{
+    animation: pro-img-container 0.75s linear forwards
+}
+@keyframes pro-img-container{
+    100%{
+        transform: translate(0%, 0%);
+        opacity: 1;
     }
 }
