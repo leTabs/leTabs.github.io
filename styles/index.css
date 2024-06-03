@@ -18,7 +18,7 @@
     justify-content: center;
     align-items: center;
     animation: opening-left-div 0.5s linear forwards;
-    background: linear-gradient(180deg, rgb(201, 201, 201) ,rgb(215, 215, 215), white, white);
+    background: linear-gradient(180deg, rgb(239, 239, 239) ,rgb(255, 255, 255), white, white);
 }
 @keyframes opening-left-div {
     0%{
@@ -188,6 +188,24 @@
     justify-content: center;
     align-items: center;
 }
+.project-img-container{
+    transform: translate(10%, 0%);
+    opacity: 0;
+}
+.project-img-container:nth-of-type(2),
+.project-img-container:nth-of-type(4){
+    transform: translate(-10%, 0%);
+}
+.pro-img-container{
+    animation: pro-img-container 0.75s linear forwards
+}
+@keyframes pro-img-container{
+    100%{
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+}
+
 .project-img-container img{
     width: 100%;
     height: 100%;
@@ -330,8 +348,6 @@
     }
 }
 
-
-
 @media only screen and (min-width: 481px) and (max-width: 1024px){
     .home-divs-wrapper{
         display: block;
@@ -352,22 +368,132 @@
     }    .project-text-container{
         width: 100%;
     }
+    .project-text-container{
+        width: 100%;
+    }
+    /* section skills */
+    .section-skills h3{
+        font-size: 2.25rem;
+        width: 85%;
+        padding: 0 1rem 1.5rem 1rem;
+    }
+    .skills-wrapper{
+        padding: 0 0 1rem 0;
+        width: 100%;
+        display: block;
+        margin: 4rem  0 0 0;
+    }
+    .current-skill{
+        text-align: center;
+    }
+    .current-skill img{
+        width: 8rem;
+        height: 8rem;
+    }
+    .skills-tech{
+        border-top: solid 1px;
+        margin: 0rem auto 1rem auto;
+        width: fit-content;
+        padding: 2.5rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    .skills-tech img{
+        width: 3rem;
+        height: 3rem;
+        margin: 0.5rem
+    }
 }
 
-.project-img-container{
-    transform: translate(10%, 0%);
-    opacity: 0;
-}
-.project-img-container:nth-of-type(2),
-.project-img-container:nth-of-type(4){
-    transform: translate(-10%, 0%);
-}
-.pro-img-container{
-    animation: pro-img-container 0.75s linear forwards
-}
-@keyframes pro-img-container{
-    100%{
-        transform: translate(0%, 0%);
-        opacity: 1;
+@media only screen and (min-width: 1800px) and (max-width: 2350px){
+    .home-left-div-text-wrapper{
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+        margin-top: 4.5rem;
+    }
+    .home-left-div-text-wrapper h2{
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+    .home-left-div-text-wrapper p{
+        /* width: 80%; */
+        font-size: 2.5rem;
+    }
+    .home-left-div-text-wrapper button{
+        font-size: 1.5rem;
+    }
+    /*  */
+    /* my work */
+    .section-my-work, .section-skills{
+        padding-top: 9rem;
+    }
+    .project-container{
+        margin: 2.5rem auto 5rem auto ;
+        height: fit-content;
+        text-align: center;
+        width: 96.5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .project-text-container{
+        width: 45%
+    }
+    .project-text-container h3{
+        font-size: 3.5rem;
+    }
+    .project-text-container p{
+        font-size: 2.25rem;
+        width: 50%;
+    }
+    .project-container a{
+        font-size: 1.75rem;
+    }
+
+    /* section skills */
+    .section-skills h3{
+        font-size: 3.25rem;
+        margin: 3rem auto 2rem auto;
+        text-align: center;
+        width: calc(100% - 13.4rem);
+        letter-spacing: 0.15rem;
+        word-spacing: 0.3rem;
+        padding: 0 1.3rem 1.5rem 1.3rem;
+        border-bottom: solid 1px black;
+    }
+    .skills-wrapper{
+        /* padding: 0 5rem 1rem 5rem; */
+        /* width: calc(70% - 13.4rem); */
+        width: calc(65% - 10rem);
+        margin: 4rem  auto 0 auto;
+    }
+    .current-skill{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        opacity: 0;
+    }
+    .current-skill:nth-of-type(2){
+        animation-delay: 0.25s;
+    }
+    .current-skill:nth-of-type(3){
+        animation-delay: 0.5s;
+    }
+    .current-skill-animation{
+        animation: current-skill 0.5s ease-in forwards;
+    }
+    .current-skill img{
+        width: 8rem;
+        height: 8rem;
+    }
+    .current-skill p{
+        font-size: 2rem;
+    }
+    .skills-tech img{
+        width: 4rem;
+        height: 4rem;
     }
 }
