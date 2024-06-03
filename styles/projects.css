@@ -34,6 +34,17 @@
     border: solid 1px gray;
     object-fit: cover;
     box-shadow: 3px 3px 15px black;
+    animation: display-img 1s ease-in forwards
+}
+@keyframes display-img {
+    0%{
+        opacity: 0;
+        transform: translate(0%, 15%);
+    }    
+    100%{
+        opacity: 1;
+        transform: translate(0%, 0%);
+    }
 }
 .display-text-wrapper{
     background-color: rgb(24, 24, 24);
@@ -49,8 +60,17 @@
     padding-bottom: 2.5rem;
     letter-spacing: 0.05rem;
     border-bottom: solid gray 1px;
+    animation: display-text 1s ease-in forwards;
 }
 
+@keyframes display-text {
+    0%{
+        opacity: 0;
+    }    
+    100%{
+        opacity: 1;
+    }
+}
 .template-display-btn-container{
     margin-top: 2rem;
     display: grid;
@@ -130,6 +150,30 @@ section h3{
     margin-left: 15%;
     margin-bottom: 0.5rem;
 }
+.all-imgs-span-animation{
+    animation: all-imgs-span 0.5s ease-in forwards;
+}
+.img-container-animation{
+    animation: all-imgs-span 0.5s ease-in forwards;
+}
+@keyframes all-imgs-span {
+    0%{
+        opacity: 0;
+        transform: translate(0%, 15%);
+    }    
+    100%{
+        opacity: 1;
+        transform: translate(0%, 0%);
+    }
+}
+@keyframes img-container {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;    
+    }
+}
 .all-imgs-span img{
     margin-right: 1rem;
 }
@@ -162,6 +206,7 @@ section h3{
     align-items: center;
     padding: 0rem 2rem;
     transition: 250ms;
+    opacity: 0;
 }
 .img-container img{
     display: none;
