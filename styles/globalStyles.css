@@ -161,42 +161,51 @@ footer p a:hover{
     color: rgb(139, 139, 139);
 }
 /*  */
-
 .certifications-container{
     opacity: 1;
-    width: fit-content;
-    height: fit-content;
-    padding: 1.5rem 4rem;
+    width: 75vw;
+    padding: 3rem 3rem 1.5rem 3rem;
     position: fixed;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     border: solid 10px rgb(0, 0, 0);
     background-color: white;
-    display: none;
     transition: 250ms;
-    z-index: 8;
+    z-index: 18;
+    box-shadow: 1px 1px 1px white, -1px -1px 1px white;
+    display: none;
+    overflow-y: auto;
 }
 .certifications-container h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 0;
     margin-bottom: 2rem;
     padding:0 2rem 0.5rem 2rem;
     border-bottom: solid 1px black;
     letter-spacing: 0.08rem;
     word-spacing: 0.5rem;
+    text-align: center;
 }
-.certifications-container span{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.cert-wrapper-outer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cert-wrapper-inner{
+    margin: 0 0.5rem
+
+}
+.cert-wrapper-inner img{
+    width:100%;
 }
 .certifications-container p{
-    font-size: 1.1rem;
-    margin: 0.5rem 1rem 0.5rem 0;
+    font-size: 1.25rem;
+    margin: 0.5rem auto;
+    width: 75%;
     letter-spacing: 0.075rem;
     word-spacing: 0.3rem;
-    display: inline-block;
+    text-align: center;
 }
 .certifications-container button{
     display: block;
@@ -211,36 +220,6 @@ footer p a:hover{
 }
 .certifications-container button:hover{
     border-bottom: solid 2px black;
-}
-.certifications-plus-icon{
-    width: 0.75rem;
-    height: 0.75rem;
-    border: solid 1px;
-    padding: 0.1rem;
-    cursor: pointer;
-    transition: 250ms;
-}
-.certifications-plus-icon:hover{
-    box-shadow: 3px 3px 0px black;
-}
-.certificate-container{
-    margin: 0 auto 0 auto;
-    margin-top: 0rem;
-    width: 0rem;
-    height: 0rem;
-    display: none;
-    transition: 250ms;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(194, 194, 194);
-}
-.certificate-container img{
-    width: 90%;
-    height: 90%;
-    opacity: 0;
-    display: none;
-    transition: 250ms;
-    object-fit: cover;
 }
 
 @keyframes slider{
@@ -309,8 +288,6 @@ footer p a:hover{
 .cv-container button:hover{
     border-bottom: solid 2px black;
 }
-
-
 /* MOBILE NAV ELEMENTS */
 .mob-nav{
     display: none;
@@ -411,6 +388,7 @@ footer p a:hover{
     .mob-nav{
         display: flex;
     }
+
     .contact-container{
         width: 100%;
         max-width: 100%;
@@ -421,19 +399,29 @@ footer p a:hover{
         width: 1.2rem;
         height: 1.2rem;
     }
-
-    /*  */
-        
     .certifications-container{
-        padding: 1.5rem 2rem;
+        width: calc(75vw - 3rem);
+        display: block;
+        height: 75vh;
+        max-height: 75vh;
     }
     .certifications-container h2{
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
-    .certifications-container p{
-        margin: 0.25rem 1rem 0.25rem 0;
+    .cert-wrapper-outer{
+        display: block;
     }
-        /*  */
+    .cert-wrapper-inner{
+        margin: 1.5rem 0.5rem;
+
+    }
+    .cert-wrapper-inner img{
+        width:100%;
+    }
+    .certifications-container button{
+        font-size: 1.25rem;
+    }
+    /*  */
     .cv-container{
         width: 65vw;
         padding: 1.5rem 2rem;
@@ -466,21 +454,34 @@ footer p a:hover{
     /*  */
         
     .certifications-container{
-        padding: 1.5rem 2rem;
+        width: calc(75vw - 3rem);
+        max-height: 75vh;
     }
     .certifications-container h2{
-        font-size: 1.8rem;
+        font-size: 2.5rem;
+    }
+    .cert-wrapper-outer{
+        display: block;
+    }
+
+    .cert-wrapper-inner{
+        margin: 2rem 0.5rem;
+
     }
     .certifications-container p{
-        margin: 0.25rem 1rem 0.25rem 0;
+        font-size: 1.5rem;
     }
-        /*  */
-    .cv-container{
-        width: 65vw;
-        padding: 1.5rem 2rem;
+    .certifications-container button{
+        display: block;
+        margin: 1.5rem auto 0 auto;
+        font-size: 1.4rem;
     }
-    .cv-container h2{
-        font-size: 1.8rem;
+    .certifications-container button:hover{
+        border-bottom: solid 2px black;
+    }
+    /*  */
+    .cv-container button{
+        font-size: 1.25rem;
     }
 }
 
@@ -519,102 +520,30 @@ footer p a:hover{
         font-size: 1.75rem;
         line-height: 2.75rem;
     }
-    /* undone */
-    .contact-certifications:hover, .cv-contact:hover,
-    .contact-container span p a:hover{
-        color: rgb(139, 139, 139);
-        cursor: pointer;
-    }
-    .contact-container img{
-        width: 1rem;
-        height: 1rem;
-        filter: invert(100%);
-    }
     /*  */
-    
-    .certifications-container{
-        opacity: 1;
-        width: fit-content;
-        height: fit-content;
-        padding: 1.5rem 4rem;
-        position: fixed;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
-        border: solid 10px rgb(0, 0, 0);
-        background-color: white;
-        display: none;
-        transition: 250ms;
-        z-index: 8;
-    }
     .certifications-container h2{
-        font-size: 2rem;
-        margin: 0;
-        margin-bottom: 2rem;
-        padding:0 2rem 0.5rem 2rem;
-        border-bottom: solid 1px black;
-        letter-spacing: 0.08rem;
-        word-spacing: 0.5rem;
-    }
-    .certifications-container span{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        font-size: 3.75rem;
     }
     .certifications-container p{
-        font-size: 1.1rem;
-        margin: 0.5rem 1rem 0.5rem 0;
-        letter-spacing: 0.075rem;
-        word-spacing: 0.3rem;
-        display: inline-block;
+        font-size: 2rem;
     }
     .certifications-container button{
-        display: block;
-        margin: 1.5rem auto 0 auto;
-        font-size: 1rem;
-        border: solid 2px transparent;
-        outline: none;
-        background-color: transparent;
-        transition: 250ms;
-        padding: 0.25rem 1rem;
-        cursor: pointer;
+        font-size: 1.5rem;
     }
-    .certifications-container button:hover{
-        border-bottom: solid 2px black;
+    /*  */
+    .cv-container h2{
+        font-size: 3.25rem;
     }
-    .certifications-plus-icon{
-        width: 0.75rem;
-        height: 0.75rem;
-        border: solid 1px;
-        padding: 0.1rem;
-        cursor: pointer;
-        transition: 250ms;
+    .cv-container a{
+        font-size: 2.25rem;
+        margin: 0.5rem 2rem;
     }
-    .certifications-plus-icon:hover{
-        box-shadow: 3px 3px 0px black;
-    }
-    .certificate-container{
-        margin: 0 auto 0 auto;
-        margin-top: 0rem;
-        width: 0rem;
-        height: 0rem;
-        display: none;
-        transition: 250ms;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(194, 194, 194);
-    }
-    .certificate-container img{
-        width: 90%;
-        height: 90%;
-        opacity: 0;
-        display: none;
-        transition: 250ms;
-        object-fit: cover;
+    .cv-container button{
+        font-size: 1.5rem;
     }
 }
 
-@media only screen and (min-width: 2350px) and (max-width: 3600px){
+@media only screen and (min-width: 2350px){
     /* nav */
     nav{
         height: 10.5rem;
@@ -631,7 +560,6 @@ footer p a:hover{
         margin-left: 2.5rem;
     }
     /*  */
-
     .contact-container{
         width: calc(100% - 50rem);
         padding: 2rem 25rem 1rem 25rem;
@@ -644,97 +572,25 @@ footer p a:hover{
         font-size: 2rem;
         line-height: 2.75rem;
     }
-    /* undone */
-    .contact-certifications:hover, .cv-contact:hover,
-    .contact-container span p a:hover{
-        color: rgb(139, 139, 139);
-        cursor: pointer;
-    }
-    .contact-container img{
-        width: 1.5rem;
-        height: 1.5rem;
-        filter: invert(100%);
-    }
     /*  */
-    
-    .certifications-container{
-        opacity: 1;
-        width: fit-content;
-        height: fit-content;
-        padding: 1.5rem 4rem;
-        position: fixed;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
-        border: solid 10px rgb(0, 0, 0);
-        background-color: white;
-        display: none;
-        transition: 250ms;
-        z-index: 8;
-    }
     .certifications-container h2{
-        font-size: 2rem;
-        margin: 0;
-        margin-bottom: 2rem;
-        padding:0 2rem 0.5rem 2rem;
-        border-bottom: solid 1px black;
-        letter-spacing: 0.08rem;
-        word-spacing: 0.5rem;
-    }
-    .certifications-container span{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        font-size: 4rem;
     }
     .certifications-container p{
-        font-size: 1.1rem;
-        margin: 0.5rem 1rem 0.5rem 0;
-        letter-spacing: 0.075rem;
-        word-spacing: 0.3rem;
-        display: inline-block;
+        font-size: 2.5rem;
     }
     .certifications-container button{
-        display: block;
-        margin: 1.5rem auto 0 auto;
-        font-size: 1rem;
-        border: solid 2px transparent;
-        outline: none;
-        background-color: transparent;
-        transition: 250ms;
-        padding: 0.25rem 1rem;
-        cursor: pointer;
+        font-size: 2rem;
     }
-    .certifications-container button:hover{
-        border-bottom: solid 2px black;
+    /*  */
+    .cv-container h2{
+        font-size: 3.5rem;
     }
-    .certifications-plus-icon{
-        width: 0.75rem;
-        height: 0.75rem;
-        border: solid 1px;
-        padding: 0.1rem;
-        cursor: pointer;
-        transition: 250ms;
+    .cv-container a{
+        font-size: 2.5rem;
+        margin: 0.5rem 2rem;
     }
-    .certifications-plus-icon:hover{
-        box-shadow: 3px 3px 0px black;
-    }
-    .certificate-container{
-        margin: 0 auto 0 auto;
-        margin-top: 0rem;
-        width: 0rem;
-        height: 0rem;
-        display: none;
-        transition: 250ms;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(194, 194, 194);
-    }
-    .certificate-container img{
-        width: 90%;
-        height: 90%;
-        opacity: 0;
-        display: none;
-        transition: 250ms;
-        object-fit: cover;
+    .cv-container button{
+        font-size: 1.75rem;
     }
 }
