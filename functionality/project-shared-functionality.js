@@ -3,7 +3,7 @@ function animationScrollTrigger(target, animation){
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.6
+      threshold: 0.3
     };
     const callback = (entries, observer) => {
       entries.forEach(entry => {
