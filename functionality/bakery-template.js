@@ -79,7 +79,8 @@ for(let i = 0; i < expandHideBtnArray.length; i++){
     })
 }
 
-expandAllBtn.addEventListener('click', ()=>{
+
+function expandAllFunc(){
     for(let i = 0; i < expandHideBtnArray.length; i++){
         imgFrameArray[i].style.height = '100%'
         imgFrameArray[i].style.padding = '2rem'
@@ -90,7 +91,10 @@ expandAllBtn.addEventListener('click', ()=>{
             templateImgArray[i].style.display = 'block'
         }, 250)
     }
-})
+}
+
+expandAllFunc()
+expandAllBtn.addEventListener('click', ()=>{expandAllFunc()})
 
 
 collapseAllBtn.addEventListener('click', ()=>{
