@@ -498,7 +498,7 @@
     }
 }
 
-@media only screen and (min-width: 2350px) and (max-width: 3600px){
+@media only screen and (min-width: 2350px){
     .home-left-div-text-wrapper h2{
         font-size: 8rem;
         line-height: 9.5rem;
@@ -547,7 +547,7 @@
         font-size: 6rem;
     }
     .skills-wrapper{
-        width: calc(45% - 10rem);
+        width: calc(55% - 10rem);
         margin: 4rem  auto 0 auto;
     }
     .current-skill{
