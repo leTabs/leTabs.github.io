@@ -80,7 +80,7 @@ for(let i = 0; i < expandHideBtnArray.length; i++){
     })
 }
 
-expandAllBtn.addEventListener('click', ()=>{
+function expandAllFunc(){
     for(let i = 0; i < expandHideBtnArray.length; i++){
         imgFrameArray[i].style.height = '100%'
         imgFrameArray[i].style.padding = '2rem'
@@ -90,8 +90,11 @@ expandAllBtn.addEventListener('click', ()=>{
         setTimeout(()=>{
             templateImgArray[i].style.display = 'block'
         }, 250)
-    }
-})
+    } 
+}
+
+expandAllFunc()
+expandAllBtn.addEventListener('click', ()=>{expandAllFunc()})
 
 
 collapseAllBtn.addEventListener('click', ()=>{
@@ -99,8 +102,8 @@ collapseAllBtn.addEventListener('click', ()=>{
         templateImgArray[i].style.display = 'none'
         expandHideBtnArray[i].src = 'images/icons/plus-solid.svg'
         imageDisplaySwitchArray[i] = false
+        imgFrameArray[i].style.height = '1vh'
         setTimeout(()=>{
-            imgFrameArray[i].style.height = '1vh'
             imgFrameArray[i].style.padding = '0rem 2rem'
         }, 250)
     }
