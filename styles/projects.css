@@ -333,6 +333,12 @@ section h3{
     .description{
             font-size: 2.25rem;
     }
+    .template-display{
+        padding-top: 11.5rem ;
+    }
+    .display-img-description-pair img{
+        width: 85%;
+    }
     .display-img-description-pair p{
         font-size: 2.5rem;
     }
@@ -398,7 +404,7 @@ section h3{
     }
 }
 
-@media only screen and (min-width: 2350px) and (max-width: 3600px){
+@media only screen and (min-width: 2350px){
     .section-general-desc, .template-all-imgs{
         padding-top: 12rem;
     }
@@ -408,8 +414,14 @@ section h3{
     .description{
             font-size: 3.25rem;
     }
+    .display-img-description-pair img{
+        width:80.5%;
+    }
     .display-img-description-pair p{
         font-size: 3.25rem;
+    }
+    .template-display{
+        padding-top: 14.5rem ;
     }
     .template-display-btn-container button{
         font-size: 2rem;
