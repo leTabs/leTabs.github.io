@@ -108,11 +108,13 @@ function animationScrollTrigger(target, animation){
 
 const projectImgContainerArray = document.querySelectorAll('.project-img-container')
 const currentSkillArray = document.querySelectorAll('.current-skill')
+
 for(let i = 0; i < projectImgContainerArray.length; i++){
     animationScrollTrigger(projectImgContainerArray[i], 'pro-img-container')
 }
 for(let i = 0; i < currentSkillArray.length; i++){
     animationScrollTrigger(currentSkillArray[i], 'current-skill-animation')
 }
+
 const homeViewCvBtn = document.querySelector('.home-view-cv-btn')
 animationScrollTrigger(homeViewCvBtn, 'home-cv-animation')
