@@ -19,7 +19,10 @@ const sectionMyWork = document.querySelector('.section-my-work')
 const sectionSkills = document.querySelector('.section-skills')
 const sectionCommunication = document.querySelector('.section-communication')
 
-// projects elements
+// other elements
+const projectImgContainerArray = document.querySelectorAll('.project-img-container')
+const currentSkillArray = document.querySelectorAll('.current-skill')
+const homeViewCvBtn = document.querySelector('.home-view-cv-btn')
 
 // scroll in to view functionalities
 navHome.addEventListener('click', ()=>{
@@ -51,13 +54,12 @@ mobNavCommunication.addEventListener('click', ()=>{
     sectionCommunication.scrollIntoView()
     closeMobNavContainer()
 })
-// 
+
+// reload window listener
 navLeft.addEventListener('click', ()=>{
     location.reload()
 })
-
-
-
+// 
 function closeMobNavContainer(){
     mobNavIcon.style.transform = 'rotate(0deg)'
     mobNavIcon.style.filter = 'invert(100%)'
@@ -67,9 +69,7 @@ function closeMobNavContainer(){
     }, 250)
     mobNavSwitch = false
 }
-
 let mobNavSwitch = false
-
 mobNavIcon.addEventListener('click', ()=>{
     if(!mobNavSwitch){
         mobNavIcon.style.transform = 'rotate(-90deg)'
@@ -84,15 +84,12 @@ mobNavIcon.addEventListener('click', ()=>{
     }
 })
 
-
-
-
-// [...]
+// [...] Animation function
 function animationScrollTrigger(target, animation){
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.6
+      threshold: 0.55
     };
     const callback = (entries, observer) => {
       entries.forEach(entry => {
@@ -106,15 +103,12 @@ function animationScrollTrigger(target, animation){
     observer.observe(target)
 }
 
-const projectImgContainerArray = document.querySelectorAll('.project-img-container')
-const currentSkillArray = document.querySelectorAll('.current-skill')
 
+// animation calls
 for(let i = 0; i < projectImgContainerArray.length; i++){
     animationScrollTrigger(projectImgContainerArray[i], 'pro-img-container')
 }
 for(let i = 0; i < currentSkillArray.length; i++){
     animationScrollTrigger(currentSkillArray[i], 'current-skill-animation')
 }
-
-const homeViewCvBtn = document.querySelector('.home-view-cv-btn')
 animationScrollTrigger(homeViewCvBtn, 'home-cv-animation')
