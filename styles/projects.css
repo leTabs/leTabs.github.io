@@ -1,5 +1,5 @@
 
-/* sections */
+/* top sections */
 .section-general-desc{
     padding-top: 5rem;
 }
@@ -62,7 +62,6 @@
     border-bottom: solid gray 1px;
     animation: display-text 1s ease-in forwards;
 }
-
 @keyframes display-text {
     0%{
         opacity: 0;
@@ -99,9 +98,6 @@
 .template-display-btn-container button:nth-of-type(2){
     border-radius: 0 20px 20px 0;
 }
-
-
-/* it uses the same css as the h3 in the home page sections */
 section h3{
         font-size: 2.75rem;
         margin: 3rem auto 2rem auto;
@@ -134,7 +130,6 @@ section h3{
     transition: 250ms;
 }
 .expand-hide-btn-wrapper button:hover{
-    /* background-color: rgb(209, 209, 209); */
     border-color: black;
 }
 .expand-hide-btn-wrapper span{
@@ -222,17 +217,13 @@ section h3{
         opacity: 1;
     }
 }
-
-/* communications */
-
 /*  */
-
-/* exacly the same as in index */
+/* phone size screen m.q. */
 @media only screen and (min-width: 320px) and (max-width: 480px){
     .description{
-            font-size: 1.5rem;
-            width: 90%;
-            text-align: center;
+        font-size: 1.5rem;
+        width: 90%;
+        text-align: center;
     }
     section h3{
         font-size: 2.25rem;
@@ -261,7 +252,6 @@ section h3{
         font-size: 1.4rem;
         padding-bottom: 1.5rem;
     }
-
     .template-display-btn-container{
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
@@ -270,16 +260,15 @@ section h3{
     .template-display-btn-container button{
         width: 40vw;
     }
-    /* section all images */
     .template-all-imgs{
         display: none;
     }
 }
-
+/* tablet size screen m.q. */
 @media only screen and (min-width: 481px) and (max-width: 1024px){
     .description{
-            font-size: 1.5rem;
-            width: 80%;
+        font-size: 1.5rem;
+        width: 80%;
     }
     section h3{
         font-size: 2.25rem;
@@ -308,7 +297,6 @@ section h3{
         font-size: 1.4rem;
         padding-bottom: 1.5rem;
     }
-
     .template-display-btn-container{
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
@@ -321,8 +309,7 @@ section h3{
         display: none;
     }
 }
-
-/*  */
+/* larger size screen m.q. */
 @media only screen and (min-width: 1800px) and (max-width: 2350px){
     .section-general-desc, .template-all-imgs{
         padding-top: 9rem;
@@ -331,7 +318,7 @@ section h3{
         font-size: 3.25rem;
     }
     .description{
-            font-size: 2.25rem;
+        font-size: 2.25rem;
     }
     .template-display{
         padding-top: 11.5rem ;
@@ -403,7 +390,7 @@ section h3{
         animation: appearing-img 0.5s linear forwards;
     }
 }
-
+/* larger size screen m.q. no2 */
 @media only screen and (min-width: 2350px){
     .section-general-desc, .template-all-imgs{
         padding-top: 12rem;
@@ -412,7 +399,7 @@ section h3{
         font-size: 6rem;
     }
     .description{
-            font-size: 3.25rem;
+        font-size: 3.25rem;
     }
     .display-img-description-pair img{
         width:80.5%;
