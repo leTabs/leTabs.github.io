@@ -1,4 +1,8 @@
+// elements
+const allImagesSpansArray = document.querySelectorAll('.all-imgs-span')
+const imageContainerArray = document.querySelectorAll('.img-container')
 
+// animation function
 function animationScrollTrigger(target, animation){
     const options = {
       root: null,
@@ -17,9 +21,6 @@ function animationScrollTrigger(target, animation){
     observer.observe(target)
 }
 
-
-const allImagesSpansArray = document.querySelectorAll('.all-imgs-span')
-const imageContainerArray = document.querySelectorAll('.img-container')
 for(let i = 0; i < allImagesSpansArray.length; i++){
     animationScrollTrigger(allImagesSpansArray[i], 'all-imgs-span-animation')
 }
