@@ -6,8 +6,6 @@ const certificationsContainer = document.querySelector('.certifications-containe
 const cvOpener = document.querySelectorAll('.cv-opener')
 const cvContainer = document.querySelector('.cv-container')
 
-
-
 //[...]
 // container opening functionality
 function frameDisplayer(container){
@@ -28,7 +26,6 @@ function frameCloser(container){
 }
 //[...]
 
-
 // [...]
 // cv frame define content
 cvContainer.innerHTML = `
@@ -37,7 +34,6 @@ cvContainer.innerHTML = `
     <a href="functionality/resumes/CV-Lepesiotis-En.pdf">English Cv</a>
     <button class="cv-close-btn">close</button>
 `
-
 // [...]
 // certification define content
 certificationsContainer.innerHTML = `
@@ -63,10 +59,6 @@ certificationsContainer.innerHTML = `
     <button class="certifications-close-btn">close</button>
 `
 
-
-
-
-
 // opening and closing the cv frame (event listeners)
 for(let i = 0; i < cvOpener.length; i++){
     cvOpener[i].addEventListener('click', ()=>{
@@ -76,15 +68,12 @@ for(let i = 0; i < cvOpener.length; i++){
 }
 //[...]
 
-
-
 //[...]
 // contact certification event listeners (open frame)
 contactCertifications.addEventListener('click', ()=>{
 frameDisplayer(certificationsContainer)
 document.querySelector('.certifications-close-btn').addEventListener('click',()=>{frameCloser(certificationsContainer)})
 })
-
 
 //[...]
 // DOC listener (escape - close cv & certifications frames)
