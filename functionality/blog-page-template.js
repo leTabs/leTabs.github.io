@@ -125,12 +125,12 @@ const displayImgsArray = [
     'laptopView.png'
 ]
 const displayTextArray = [
-    `Home page. Introdusing the theme of the website to the user.`,
+    `Home page. Introducing the theme of the website to the user.`,
     'Home page. Displaying recent blog posts.',
     'A contact form. Allowing the users to communicate with the author.',
     'Blog feed. This section includes all the blogs that have been posted.',
     'A blog content example. Read by the users',
-    'This sections includes more information about the author.',
+    'This section includes more information about the author.',
     `General mobile view design.`,
     `General tablet view design.`,
     `General laptop view design.`
