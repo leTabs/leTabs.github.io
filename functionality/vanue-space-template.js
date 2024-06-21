@@ -127,7 +127,7 @@ const displayImgsArray = [
     'laptopView.png'
 ]
 const displayTextArray = [
-    `Home page. Introdusing the theme of the website to the user.`,
+    `Home page. Introducing the theme of the website to the user.`,
     `This section allows the user to discover more details about the business.`,
     `Here, the website can direct the user to the full service list.`,
     `A communication form. Bringing potential customers in touch with the business.`,
