@@ -126,9 +126,9 @@ const displayImgsArray = [
     'laptopView.png'
 ]
 const displayTextArray = [
-    `Home page. Introdusing the theme of the website to the user.`,
+    `Home page. Introducing the theme of the website to the user.`,
     `This section allows the user to discover more details about the business.`,
-    `Here, the website propts the user to discover the business's products.`,
+    `Here, the website prompts the user to discover the business's products.`,
     `This section includes the business's information.`,
     `General mobile view design.`,
     `General mobile view design. No2`,
