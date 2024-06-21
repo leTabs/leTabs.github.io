@@ -1,18 +1,16 @@
-
+// elements 
+// mob nav
 const mobNavHome = document.querySelector('.mob-nav-home')
 const mobNavOverview = document.querySelector('.mob-nav-overview')
 const mobNavCommunication = document.querySelector('.mob-nav-communication')
-
 const mobNavIcon = document.querySelector('.mob-nav-icon')
 const mobNavContainer = document.querySelector('.mob-nav-container')
-
-
-
-
+// other elements
 const sectionGeneralDescription02 = document.querySelector('.section-general-desc')
 const templateDisplay02 = document.querySelector('.template-display')
 const sectionCommunication02 = document.querySelector('.section-communication')
 
+// scroll into view functionality
 mobNavOverview.addEventListener('click', ()=>{
     templateDisplay02.scrollIntoView()
     closeMobNavContainer()
@@ -26,6 +24,7 @@ mobNavCommunication.addEventListener('click', ()=>{
     closeMobNavContainer()
 })
 
+// mobile navigation functionality (on & off)
 
 function closeMobNavContainer(){
     mobNavIcon.style.transform = 'rotate(0deg)'
